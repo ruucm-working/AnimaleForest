@@ -46,16 +46,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\EZFPS\Photon Unity Networking\Demos\DemoWorker\Scripts\WorkerMenu.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\RaycastShooting.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\getWeapon.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\networkController.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\networkView.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\photonDestroy.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\playerName.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\roomManager.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\scoreManager.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\soundManager.cs" />
-     <Compile Include="Assets\EZFPS\Scripts\tpMuzzle.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\Camera Scripts\MouseLook.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
@@ -136,6 +126,17 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+     <Compile Include="Assets\Scripts\RaycastShooting.cs" />
+     <Compile Include="Assets\Scripts\dropWeapon.cs" />
+     <Compile Include="Assets\Scripts\getWeapon.cs" />
+     <Compile Include="Assets\Scripts\networkController.cs" />
+     <Compile Include="Assets\Scripts\networkView.cs" />
+     <Compile Include="Assets\Scripts\photonDestroy.cs" />
+     <Compile Include="Assets\Scripts\playerName.cs" />
+     <Compile Include="Assets\Scripts\roomManager.cs" />
+     <Compile Include="Assets\Scripts\scoreManager.cs" />
+     <Compile Include="Assets\Scripts\soundManager.cs" />
+     <Compile Include="Assets\Scripts\tpMuzzle.cs" />
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EZFPS\Scripts\RaycastShooting.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\getWeapon.cs">
     <Files>
-      <File FileName="Assets\EZFPS\Scripts\roomManager.cs" Line="122" Column="4" />
-      <File FileName="Assets\EZFPS\Scripts\getWeapon.cs" Line="35" Column="8" />
-      <File FileName="Assets\EZFPS\Scripts\RaycastShooting.cs" Line="72" Column="65" />
+      <File FileName="Assets\Scripts\getWeapon.cs" Line="81" Column="1" />
+      <File FileName="Assets\Scripts\RaycastShooting.cs" Line="17" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
