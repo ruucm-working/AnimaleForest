@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{2384B2A3-3AE2-F807-B68C-2D15DC21EB50}</ProjectGuid>
+	<ProjectGuid>{AD96B0C0-9993-0E91-2A38-0C6E5A49F8F5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\EZFPS\Photon Unity Networking\Demos\DemoWorker\Scripts\WorkerMenu.cs" />
      <Compile Include="Assets\EZFPS\Scripts\RaycastShooting.cs" />
+     <Compile Include="Assets\EZFPS\Scripts\getWeapon.cs" />
      <Compile Include="Assets\EZFPS\Scripts\networkController.cs" />
      <Compile Include="Assets\EZFPS\Scripts\networkView.cs" />
      <Compile Include="Assets\EZFPS\Scripts\photonDestroy.cs" />
@@ -145,23 +146,17 @@
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\EZFPS\Photon Unity Networking\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/A Carver/Unity/0SOURCES/ezfpsv05/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/A Carver/Unity/0SOURCES/ezfpsv05/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
@@ -172,7 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2CC75DEA-FCBA-5082-3231-6C1A51123E84}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{D1DF3794-439B-CCC6-6CF8-D644046BCF6F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
