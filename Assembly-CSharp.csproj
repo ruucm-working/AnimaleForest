@@ -127,6 +127,7 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Scripts\RaycastShooting.cs" />
+     <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
      <Compile Include="Assets\Scripts\dropWeapon.cs" />
      <Compile Include="Assets\Scripts\getWeapon.cs" />
      <Compile Include="Assets\Scripts\networkController.cs" />

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\getWeapon.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Javascript\Player.js">
     <Files>
-      <File FileName="Assets\Scripts\getWeapon.cs" Line="81" Column="1" />
-      <File FileName="Assets\Scripts\RaycastShooting.cs" Line="17" Column="43" />
+      <File FileName="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Javascript\Player.js" Line="240" Column="25" />
+      <File FileName="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Background.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

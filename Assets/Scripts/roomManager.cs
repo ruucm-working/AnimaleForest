@@ -26,6 +26,15 @@ public class roomManager : Photon.MonoBehaviour {
 	public InputField roomField;
 	public InputField nameField;
 	public Text serverList;
+
+
+
+	private var baseFOV : float;
+
+
+	function Start () {
+		baseFOV = Camera.main.fieldOfView;
+	}
 	
 	void Awake(){
 		PhotonNetwork.ConnectUsingSettings (currentVersion);
@@ -118,7 +127,7 @@ public class roomManager : Photon.MonoBehaviour {
 			
 			player.transform.FindChild("Graphics").gameObject.SetActive(true);
 			((MonoBehaviour)player.GetComponent ("networkController")).enabled = true;	
-			((MonoBehaviour)player.GetComponent ("MouseLook")).enabled = true;	
+//			((MonoBehaviour)player.GetComponent ("MouseLook")).enabled = true;	
 			
 		}
 		
