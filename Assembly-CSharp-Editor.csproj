@@ -70,6 +70,9 @@
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\EZFPS\Photon Unity Networking\changelog.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

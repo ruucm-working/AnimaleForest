@@ -29,14 +29,9 @@ public class roomManager : Photon.MonoBehaviour {
 
 
 
-	private var baseFOV : float;
-
-
-	function Start () {
-		baseFOV = Camera.main.fieldOfView;
-	}
 	
 	void Awake(){
+//		Screen.showCursor = false;
 		PhotonNetwork.ConnectUsingSettings (currentVersion);
 		uiParent.SetActive (false);
 		gameUIParent.SetActive (false);

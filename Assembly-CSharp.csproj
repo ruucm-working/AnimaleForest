@@ -126,8 +126,10 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+     <Compile Include="Assets\Scripts\LockAndHideCursor.cs" />
      <Compile Include="Assets\Scripts\RaycastShooting.cs" />
      <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Scripts\UnityClipCursor.cs" />
      <Compile Include="Assets\Scripts\dropWeapon.cs" />
      <Compile Include="Assets\Scripts\getWeapon.cs" />
      <Compile Include="Assets\Scripts\networkController.cs" />

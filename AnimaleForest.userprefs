@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Javascript\Player.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FakeSniperView\FakeSniperView.js">
     <Files>
-      <File FileName="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Javascript\Player.js" Line="240" Column="25" />
-      <File FileName="..\..\INTERACTIVE\CameraProjects\CameraProjects\Assets\2D Platform Starter kit\Scripts\Background.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\roomManager.cs" Line="15" Column="2" />
+      <File FileName="Assets\FakeSniperView\FakeSniperView.js" Line="19" Column="2" />
+      <File FileName="Assets\Scripts\UnityClipCursor.cs" Line="145" Column="27" />
+      <File FileName="Assets\Scripts\LockAndHideCursor.cs" Line="3" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
