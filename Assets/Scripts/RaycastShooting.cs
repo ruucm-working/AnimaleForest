@@ -52,7 +52,8 @@ public class RaycastShooting : MonoBehaviour
 		if(Input.GetMouseButtonDown(0) && ammo >= 1 && !isReload)
 		{
 			
-			fireShot ();
+//			fireShot ();
+			candyShot ();
 		}
 
 
@@ -96,7 +97,42 @@ public class RaycastShooting : MonoBehaviour
 			}
 		}
 	}
-	
+
+
+	public void candyShot(){
+		RaycastHit hit;
+		Ray ray = Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0));
+		
+//		spawnMuzzle ();
+		PlayerPrefs.SetInt ("ammo", ammo - 1);
+		
+		if(getWeapon.weaponNum ==0)
+			animManager.Play (shoot.name);
+		else if (getWeapon.weaponNum ==1)
+			animManager1.Play (shoot.name);
+		
+		
+		
+		
+		if (Physics.Raycast (ray, out hit, range) && ammo >= 1) {
+			GameObject particleClone;
+			particleClone = Instantiate (par, hit.point, Quaternion.LookRotation (hit.normal)) as GameObject;
+//			Destroy (particleClone, 0.3f);
+
+			if(hit.collider.gameObject.GetComponent<PhotonView>() != null){
+				PhotonView pv = hit.collider.gameObject.GetComponent<PhotonView> ();
+				pv.RPC ("ApplyDamage", PhotonTargets.All, theDamage);
+				
+				if (pv.transform.tag == "Blue" && gameObject.tag == "Red") {
+					PlayerPrefs.SetInt ("score", PlayerPrefs.GetInt ("score") + 5);
+				}
+				if (pv.transform.tag == "Red" && gameObject.tag == "Blue") {
+					PlayerPrefs.SetInt ("score", PlayerPrefs.GetInt ("score") + 5);
+				}
+			}
+		}
+	}
+
 	
 	public void spawnMuzzle(){
 		PhotonNetwork.Instantiate (flare.name, muzzle.position, muzzle.rotation, 0);
@@ -108,8 +144,6 @@ public class RaycastShooting : MonoBehaviour
 	}
 	
 	public void startReload(){
-
-
 
 		if(getWeapon.weaponNum ==0)
 			animManager.Play (reload.name);
