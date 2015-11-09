@@ -8,7 +8,13 @@ public class getWeapon : MonoBehaviour
 	
 //	public static bool Gun1,Gun2 = false; 
 
-	public static int weaponNum = 0;
+
+
+
+	//{shot, fire, donut}
+	public static bool[] weapon = {true, false,  false };
+
+
 
 	
 	// Use this for initialization
@@ -38,21 +44,33 @@ public class getWeapon : MonoBehaviour
 			
 			Destroy (other.gameObject);
 
-			weaponNum = 1;
+//			weaponNum = 1;
 
+			weapon[1] = true;
 			
 			
 		}
 		
 		
 		
-		if (other.gameObject.tag == "Gun2") {
+		if (other.gameObject.tag == "Donut") {
 			Destroy (other.gameObject);
 
-			weaponNum = 2;
+//			weaponNum = 2;
 			Debug.Log ("other.gameObject : " + other.gameObject);
+
+			weapon[2] = true;
 			
 		}
+
+
+//		if (other.gameObject.tag == "Donut") {
+//			Destroy (other.gameObject);
+//			
+//			weaponNum = 3;
+//			Debug.Log ("other.gameObject : " + other.gameObject);
+//			
+//		}
 
 
 
