@@ -67,6 +67,20 @@
      <Compile Include="Assets\EZFPS\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
+     <Compile Include="Assets\Global_Scripts\RaycastShooting.cs" />
+     <Compile Include="Assets\Global_Scripts\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Global_Scripts\UnityClipCursor.cs" />
+     <Compile Include="Assets\Global_Scripts\dropWeapon.cs" />
+     <Compile Include="Assets\Global_Scripts\getWeapon.cs" />
+     <Compile Include="Assets\Global_Scripts\networkController.cs" />
+     <Compile Include="Assets\Global_Scripts\networkView.cs" />
+     <Compile Include="Assets\Global_Scripts\photonDestroy.cs" />
+     <Compile Include="Assets\Global_Scripts\playerName.cs" />
+     <Compile Include="Assets\Global_Scripts\roomManager.cs" />
+     <Compile Include="Assets\Global_Scripts\scoreManager.cs" />
+     <Compile Include="Assets\Global_Scripts\soundManager.cs" />
+     <Compile Include="Assets\Global_Scripts\tpMuzzle.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -126,20 +140,6 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
-     <Compile Include="Assets\Scripts\LockAndHideCursor.cs" />
-     <Compile Include="Assets\Scripts\RaycastShooting.cs" />
-     <Compile Include="Assets\Scripts\SmoothMouseLook.cs" />
-     <Compile Include="Assets\Scripts\UnityClipCursor.cs" />
-     <Compile Include="Assets\Scripts\dropWeapon.cs" />
-     <Compile Include="Assets\Scripts\getWeapon.cs" />
-     <Compile Include="Assets\Scripts\networkController.cs" />
-     <Compile Include="Assets\Scripts\networkView.cs" />
-     <Compile Include="Assets\Scripts\photonDestroy.cs" />
-     <Compile Include="Assets\Scripts\playerName.cs" />
-     <Compile Include="Assets\Scripts\roomManager.cs" />
-     <Compile Include="Assets\Scripts\scoreManager.cs" />
-     <Compile Include="Assets\Scripts\soundManager.cs" />
-     <Compile Include="Assets\Scripts\tpMuzzle.cs" />
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
@@ -150,17 +150,11 @@
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\EZFPS\Photon Unity Networking\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Plugins/Photon3Unity3D.dll</HintPath>
