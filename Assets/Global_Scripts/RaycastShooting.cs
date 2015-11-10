@@ -7,7 +7,7 @@ public class RaycastShooting : MonoBehaviour
 	public GameObject par;
 	
 	public float range = 100;
-	
+	 
 	public int ammo;
 	public int theDamage;
 	public int clipSize = 10;
@@ -83,7 +83,10 @@ public class RaycastShooting : MonoBehaviour
 			weaponNum = 1;
 			startChange(1);
 			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FireMobile"); 
+//			this.GetComponent<RaycastShooting>().animManager = (GameObject)GameObject.Find("Gun1"); 
 
+
+//			MySpell = Instantiate(animManager, transform.position, transform.rotation);
 		}
 
 
