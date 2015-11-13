@@ -19,13 +19,17 @@ public class RaycastShooting : MonoBehaviour
 	public AnimationClip shoot1 ,reload1, change1;
 	public AnimationClip shoot2 ,reload2, change2;
 
-
-
 	public static int weaponNum = 0;
 	
 	public bool isReload;
 
 	public Transform muzzle;
+	public int currentWeapon;
+	public Transform[] weapons;
+
+
+
+
 	
 	
 	void Awake(){
@@ -59,8 +63,6 @@ public class RaycastShooting : MonoBehaviour
 		if(Input.GetMouseButtonDown(0) && ammo >= 1 && !isReload)
 		{
 
-
-
 			if (weaponNum ==0)
 				fireShot ();
 			else
@@ -69,37 +71,58 @@ public class RaycastShooting : MonoBehaviour
 		}
 
 
-		if (Input.GetKeyUp (KeyCode.Alpha0) && getWeapon.weapon[0]) {
-			Debug.Log("Input.GetKeyUp (KeyCode.Alpha0)");
-			weaponNum = 0;
-//			startChange();
-			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FlareMobile"); 
-			
+
+		if(Input.GetKeyDown(KeyCode.Alpha0)) {
+			changeWeapon(0);
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha1)) {
+			changeWeapon(1);
 		}
 
 
-		if (Input.GetKeyUp (KeyCode.Alpha1) && getWeapon.weapon[1]) {
-			Debug.Log("Input.GetKeyUp (KeyCode.Alpha1)");
-			weaponNum = 1;
-			startChange(1);
-			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FireMobile"); 
-//			this.GetComponent<RaycastShooting>().animManager = (GameObject)GameObject.Find("Gun1"); 
-
-
-//			MySpell = Instantiate(animManager, transform.position, transform.rotation);
-		}
-
-
-		if (Input.GetKeyUp (KeyCode.Alpha2) && getWeapon.weapon[2]) {
-			Debug.Log("Input.GetKeyUp (KeyCode.Alpha2)");
-			weaponNum = 2;
-//			startChange();
-			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Donuts par"); 
-			
-		}
+//		if (Input.GetKeyUp (KeyCode.Alpha0) && getWeapon.weapon[0]) {
+//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha0)");
+//			weaponNum = 0;
+////			startChange();
+//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FlareMobile"); 
+//			
+//		}
+//
+//
+//		if (Input.GetKeyUp (KeyCode.Alpha1) && getWeapon.weapon[1]) {
+//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha1)");
+//			weaponNum = 1;
+//			startChange(1);
+//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FireMobile"); 
+//		}
+//
+//
+//		if (Input.GetKeyUp (KeyCode.Alpha2) && getWeapon.weapon[2]) {
+//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha2)");
+//			weaponNum = 2;
+////			startChange();
+//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Donuts par"); 
+//			
+//		}
 
 
 	}
+
+
+	public void changeWeapon(int num) {
+		currentWeapon = num;
+		for(int i = 0; i < weapons.Length; i++) {
+			if(i == num)
+				weapons[i].gameObject.SetActive(true);
+			else
+				weapons[i].gameObject.SetActive(false);
+		}
+	}
+
+
+
+
 	
 	public void fireShot(){
 		RaycastHit hit;
