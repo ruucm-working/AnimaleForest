@@ -34,6 +34,8 @@ public class RaycastShooting : MonoBehaviour
 	
 	void Awake(){
 
+		changeWeapon(0);
+
 		Reload ();
 
 
@@ -72,39 +74,47 @@ public class RaycastShooting : MonoBehaviour
 
 
 
-		if(Input.GetKeyDown(KeyCode.Alpha0)) {
+//		if(Input.GetKeyDown(KeyCode.Alpha0)) {
+//			changeWeapon(0);
+//		}
+//
+//		if(Input.GetKeyDown(KeyCode.Alpha1)) {
+//			changeWeapon(1);
+//		}
+//
+//
+//		if(Input.GetKeyDown(KeyCode.Alpha2)) {
+//			changeWeapon(2);
+//		}
+
+
+		if (Input.GetKeyUp (KeyCode.Alpha0) && getWeapon.weapon[0]) {
+			Debug.Log("Input.GetKeyUp (KeyCode.Alpha0)");
+			weaponNum = 0;
+//			startChange();
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FlareMobile"); 
 			changeWeapon(0);
+			
 		}
 
-		if(Input.GetKeyDown(KeyCode.Alpha1)) {
+
+		if (Input.GetKeyUp (KeyCode.Alpha1) && getWeapon.weapon[1]) {
+			Debug.Log("Input.GetKeyUp (KeyCode.Alpha1)");
+			weaponNum = 1;
+			startChange(1);
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FireMobile"); 
 			changeWeapon(1);
 		}
 
 
-//		if (Input.GetKeyUp (KeyCode.Alpha0) && getWeapon.weapon[0]) {
-//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha0)");
-//			weaponNum = 0;
-////			startChange();
-//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FlareMobile"); 
-//			
-//		}
-//
-//
-//		if (Input.GetKeyUp (KeyCode.Alpha1) && getWeapon.weapon[1]) {
-//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha1)");
-//			weaponNum = 1;
-//			startChange(1);
-//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("FireMobile"); 
-//		}
-//
-//
-//		if (Input.GetKeyUp (KeyCode.Alpha2) && getWeapon.weapon[2]) {
-//			Debug.Log("Input.GetKeyUp (KeyCode.Alpha2)");
-//			weaponNum = 2;
-////			startChange();
-//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Donuts par"); 
-//			
-//		}
+		if (Input.GetKeyUp (KeyCode.Alpha2) && getWeapon.weapon[2]) {
+			Debug.Log("Input.GetKeyUp (KeyCode.Alpha2)");
+			weaponNum = 2;
+//			startChange();
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Donuts par"); 
+			changeWeapon(2);
+			
+		}
 
 
 	}
