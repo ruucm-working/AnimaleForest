@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\RaycastShooting.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChasePlayer.js">
     <Files>
-      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="37" Column="19" />
+      <File FileName="Assets\Global_Scripts\ChasePlayer.js" Line="23" Column="12" />
+      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="21" Column="2" />
       <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
