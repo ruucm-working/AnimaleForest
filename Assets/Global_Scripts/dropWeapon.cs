@@ -4,9 +4,9 @@ using System.Collections;
 public class dropWeapon : MonoBehaviour {
 
 
-	public Animation animManager;
+	public Animation animManager, animManager2;
 	
-	public AnimationClip drop_d;
+	public AnimationClip drop_d, drop_d2;
 
 	void OnCollisionEnter(Collision collision) {
 		//		foreach (ContactPoint contact in collision.contacts) {
@@ -20,6 +20,8 @@ public class dropWeapon : MonoBehaviour {
 		if (collision.gameObject.tag == "Blue") {
 			Debug.Log("Drop It!");
 			animManager.Play (drop_d.name);
+			animManager2.Play (drop_d.name);
+
 		}
 		
 	}

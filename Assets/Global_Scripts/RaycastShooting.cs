@@ -117,6 +117,16 @@ public class RaycastShooting : MonoBehaviour
 		}
 
 
+		if (Input.GetKeyUp (KeyCode.Alpha3) && getWeapon.weapon[3]) {
+			Debug.Log("Input.GetKeyUp (KeyCode.Alpha3)");
+			weaponNum = 3;
+			//			startChange();
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Apple_par"); 
+			changeWeapon(3);
+			
+		}
+
+
 	}
 
 
