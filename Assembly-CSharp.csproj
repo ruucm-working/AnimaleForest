@@ -68,7 +68,6 @@
      <Compile Include="Assets\EZFPS\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\EZFPS\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
      <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
-     <Compile Include="Assets\Global_Scripts\MovingDonuts.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting_bu.cs" />
      <Compile Include="Assets\Global_Scripts\SmoothMouseLook.cs" />

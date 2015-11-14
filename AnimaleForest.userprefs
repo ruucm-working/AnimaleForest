@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\dropWeapon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChasePlayer.js">
     <Files>
-      <File FileName="..\..\INTERACTIVE\MIDTERM\112129 Midterm\Assets\Scripts\RotateCube.cs" Line="15" Column="2" />
-      <File FileName="Assets\Global_Scripts\MovingDonuts.cs" Line="14" Column="1" />
-      <File FileName="Assets\Global_Scripts\dropWeapon.cs" Line="21" Column="26" />
+      <File FileName="Assets\Global_Scripts\ChasePlayer.js" Line="23" Column="12" />
+      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="21" Column="2" />
+      <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
