@@ -183,10 +183,10 @@ public class RaycastShooting : MonoBehaviour
 //		spawnMuzzle ();
 		PlayerPrefs.SetInt ("ammo", ammo - 1);
 		
-		if(weaponNum ==1)
-			animManager1.Play (shoot.name);
-		else if (weaponNum ==2)
-			animManager1.Play (shoot.name);
+//		if(weaponNum ==1)
+//			animManager1.Play (shoot.name);
+//		else if (weaponNum ==2)
+//			animManager1.Play (shoot.name);
 		
 
 		
