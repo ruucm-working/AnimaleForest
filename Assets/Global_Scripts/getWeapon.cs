@@ -12,7 +12,7 @@ public class getWeapon : MonoBehaviour
 
 
 	//{shot, fire, donut}
-	public static bool[] weapon = {true, false,  false, false };
+	public static bool[] weapon = {true, false,  false, false, false };
 
 
 
@@ -40,7 +40,7 @@ public class getWeapon : MonoBehaviour
 		
 		if (other.gameObject.tag == "Gun1") {
 			
-			Debug.Log ("other.gameObject : " + other.gameObject);
+			Debug.Log ("Get other.gameObject  : " + other.gameObject);
 			
 			Destroy (other.gameObject);
 
@@ -57,7 +57,7 @@ public class getWeapon : MonoBehaviour
 			Destroy (other.gameObject);
 
 //			weaponNum = 2;
-			Debug.Log ("other.gameObject : " + other.gameObject);
+			Debug.Log ("Get other.gameObject  : " + other.gameObject);
 
 			weapon[2] = true;
 			
@@ -66,9 +66,18 @@ public class getWeapon : MonoBehaviour
 			Destroy (other.gameObject);
 			
 			//			weaponNum = 2;
-			Debug.Log ("other.gameObject : " + other.gameObject);
+			Debug.Log ("Get other.gameObject  : " + other.gameObject);
 			
 			weapon[3] = true;
+			
+		}
+		else if (other.gameObject.tag == "Leaf") {
+			Destroy (other.gameObject);
+			
+			//			weaponNum = 2;
+			Debug.Log ("Get other.gameObject : " + other.gameObject);
+			
+			weapon[4] = true;
 			
 		}
 
