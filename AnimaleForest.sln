@@ -7,6 +7,8 @@ Project("{ADBB41BC-964A-E6D2-A88F-2105E57D5345}") = "AnimaleForest", "Assembly-C
 EndProject
 Project("{ADBB41BC-964A-E6D2-A88F-2105E57D5345}") = "AnimaleForest", "Assembly-CSharp-Editor.csproj", "{B6B48B0D-101F-03E3-6110-CC400636B5FA}"
 EndProject
+Project("{ADBB41BC-964A-E6D2-A88F-2105E57D5345}") = "AnimaleForest", "Assembly-UnityScript.unityproj", "{FB915846-2F0F-9B43-2598-C708B7EA3515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{B6B48B0D-101F-03E3-6110-CC400636B5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6B48B0D-101F-03E3-6110-CC400636B5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6B48B0D-101F-03E3-6110-CC400636B5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB915846-2F0F-9B43-2598-C708B7EA3515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB915846-2F0F-9B43-2598-C708B7EA3515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB915846-2F0F-9B43-2598-C708B7EA3515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB915846-2F0F-9B43-2598-C708B7EA3515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
