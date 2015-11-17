@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FakeSniperView\FakeSniperView.js" />
+     <Compile Include="Assets\Global_Scripts\Animation_Walking.js" />
      <Compile Include="Assets\Global_Scripts\ChasePlayer.js" />
      <Compile Include="Assets\Global_Scripts\ChooseEquip.js" />
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
