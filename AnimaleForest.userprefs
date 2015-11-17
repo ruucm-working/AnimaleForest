@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\RaycastShooting.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\getWeapon.cs">
     <Files>
-      <File FileName="Assets\Global_Scripts\getWeapon.cs" Line="74" Column="7" />
+      <File FileName="Assets\Global_Scripts\getWeapon.cs" Line="65" Column="40" />
       <File FileName="Assets\Global_Scripts\dropWeapon.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\ChasePlayer.js" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\SmoothMouseLook.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\soundManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="195" Column="29" />
+      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="12" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
