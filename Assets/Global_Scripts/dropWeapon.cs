@@ -20,7 +20,7 @@ public class dropWeapon : MonoBehaviour {
 		if (collision.gameObject.tag == "Blue") {
 			Debug.Log("Drop It!");
 			animManager.Play (drop_d.name);
-//			animManager2.Play (drop_d.name);
+			animManager2.Play (drop_d.name);
 
 		}
 		
