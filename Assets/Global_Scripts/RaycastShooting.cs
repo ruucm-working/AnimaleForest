@@ -126,7 +126,7 @@ public class RaycastShooting : MonoBehaviour
 		if (Input.GetKeyUp (KeyCode.Alpha4) && getWeapon.weapon[4]) {
 			Debug.Log("Input.GetKeyUp (KeyCode.Alpha4)");
 			weaponNum = 4;
-//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Apple_par"); 
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Par_Leaf"); 
 			changeWeapon(4);
 			
 		}
