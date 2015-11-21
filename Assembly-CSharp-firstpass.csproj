@@ -46,17 +46,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-     <None Include="Assets\Inventory\Credits + C#.txt" />
+     <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\Global_Texture\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Global_Texture\Plugins\release_history.txt" />
-     <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-     <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
-     <None Include="Assets\EZFPS\Standard Assets\Fonts\OpenSans\License!.txt" />
-     <None Include="Assets\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-     <None Include="Assets\EZFPS\Photon Unity Networking\changelog.txt" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
+     <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\changelog.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
