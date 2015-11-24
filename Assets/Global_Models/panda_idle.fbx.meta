@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 21173e02aa248f448968071000eee533
-timeCreated: 1448187924
-licenseType: Free
+guid: 07248ef002ccad2459c10604df2ba758
+timeCreated: 1447744379
+licenseType: Pro
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -109,14 +109,14 @@ ModelImporter:
       name: panda_idle
       takeName: Take 001
       firstFrame: 10
-      lastFrame: 140
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -242,12 +242,10 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: bottom
-    hasTranslationDoF: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a6266643869ac5049a79f7987c4b1e10,
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0e6e38f74f9916a40989e67539c41329,
     type: 3}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

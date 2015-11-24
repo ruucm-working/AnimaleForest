@@ -153,38 +153,6 @@
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\UtilityScripts\SmoothSyncMovement.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\UtilityScripts\SupportLogger.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\ActivateTrigger.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\AutoMoveAndRotate.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\CameraRefocus.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\CurveControlledBob.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\DragRigidbody.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\DynamicShadowSettings.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\EventSystemChecker.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FOVKick.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FPSCounter.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FollowTarget.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\ForcedReset.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\LerpControlledBob.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\ObjectResetter.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\PlatformSpecificContent.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\SimpleActivatorMenu.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\SimpleMouseRotator.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\SmoothFollow.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\TimedObjectActivator.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\TimedObjectDestructor.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointCircuit.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\Global_Texture\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Global_Texture\Plugins\release_history.txt" />
@@ -193,24 +161,14 @@
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\REFERENCE\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-     <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
-     <None Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
@@ -224,6 +182,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D1DF3794-439B-CCC6-6CF8-D644046BCF6F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,14 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Other\InvAudio.js">
     <Files>
-      <File FileName="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" Line="8" Column="35" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="69" Column="22" />
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Other\InvAudio.js" Line="67" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Other\InvPauseGame.js" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\Animation_Walking.js" Line="14" Column="2" />
-      <File FileName="Assets\REFERENCE\Raw Mocap Data\Animations\_CompleteAnimationList.txt" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" Line="15" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
