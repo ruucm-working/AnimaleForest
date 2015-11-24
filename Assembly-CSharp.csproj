@@ -193,6 +193,7 @@
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\REFERENCE\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

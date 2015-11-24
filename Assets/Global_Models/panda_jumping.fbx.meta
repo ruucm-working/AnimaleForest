@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: dc1fbe61e35be7e40b02804e0140d8f3
-timeCreated: 1447741780
-licenseType: Pro
+guid: 20f8300648158ac4491c4579023002e1
+timeCreated: 1448343129
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -81,8 +81,6 @@ ModelImporter:
     400070: pCylinder1
     400072: pCylinder1 1
     400074: transform2
-    2300000: pCylinder1
-    3300000: pCylinder1
     4300000: pCylinder1
     7400000: panda_jumping
     9500000: //RootNode
@@ -100,7 +98,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -233,7 +231,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
@@ -245,9 +243,11 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0e6e38f74f9916a40989e67539c41329,
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 85dc282cd1a048a4e8a308970bbc45f5,
     type: 3}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

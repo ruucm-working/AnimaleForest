@@ -4,6 +4,7 @@ var animator : Animator; //stores the animator component
 var v : float; //vertical movements
 var h : float; //horizontal movements
 var sprint : float;
+var isJump : boolean;
  
 function Start () {
  
@@ -17,6 +18,12 @@ function Update () {
 v = Input.GetAxis("Vertical");
 h = Input.GetAxis("Horizontal");
 Sprinting();
+
+
+if(Input.GetButton("Jump")) {
+isJump = true;
+}
+
  
 }
  
@@ -30,6 +37,8 @@ function FixedUpdate () {
 animator.SetFloat ("isWalking", v);
 animator.SetFloat ("Turn", h);
 animator.SetFloat("Sprint", sprint);
+
+animator.SetBool("isJumping",isJump);
  
 }
  

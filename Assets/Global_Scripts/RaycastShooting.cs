@@ -108,7 +108,7 @@ public class RaycastShooting : MonoBehaviour
 		if (Input.GetKeyUp (KeyCode.Alpha2) && getWeapon.weapon[2]) {
 			Debug.Log("Input.GetKeyUp (KeyCode.Alpha2)");
 			weaponNum = 2;
-			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Donuts par"); 
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Par_Donuts"); 
 			changeWeapon(2);
 			
 		}
@@ -117,7 +117,7 @@ public class RaycastShooting : MonoBehaviour
 		if (Input.GetKeyUp (KeyCode.Alpha3) && getWeapon.weapon[3]) {
 			Debug.Log("Input.GetKeyUp (KeyCode.Alpha3)");
 			weaponNum = 3;
-			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Apple_par"); 
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Par_Apple"); 
 			changeWeapon(3);
 			
 		}
@@ -126,7 +126,7 @@ public class RaycastShooting : MonoBehaviour
 		if (Input.GetKeyUp (KeyCode.Alpha4) && getWeapon.weapon[4]) {
 			Debug.Log("Input.GetKeyUp (KeyCode.Alpha4)");
 			weaponNum = 4;
-//			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Apple_par"); 
+			this.GetComponent<RaycastShooting>().par = (GameObject)GameObject.Find("Par_Leaf"); 
 			changeWeapon(4);
 			
 		}
