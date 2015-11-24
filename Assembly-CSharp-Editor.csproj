@@ -69,6 +69,9 @@
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
+     <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\changelog.txt" />
  <Reference Include="Assembly-UnityScript">
@@ -139,8 +142,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D1DF3794-439B-CCC6-6CF8-D644046BCF6F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{AD96B0C0-9993-0E91-2A38-0C6E5A49F8F5}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
