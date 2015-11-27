@@ -21,8 +21,10 @@ Sprinting();
 
 
 if(Input.GetButton("Jump")) {
-isJump = true;
+	isJump = true;
 }
+else 
+	isJump = false;
 
  
 }
@@ -43,12 +45,12 @@ animator.SetBool("isJumping",isJump);
 }
  
 function Sprinting () {
-if(Input.GetButton("Fire1")) {
-sprint = 0.2;
-}
-else {
- 
-sprint = 0.0;
-}
- 
+	if(Input.GetButton("Fire1")) {
+	sprint = 0.2;
+	}
+	else {
+	 
+	sprint = 0.0;
+	}
+	 
 }
