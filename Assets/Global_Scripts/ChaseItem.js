@@ -46,7 +46,11 @@
 
 
 function OnTriggerStay (other : Collider) {
+//			Debug.Log("OnTriggerStay, other :"+other);
+
 			if (other.tag == "Temtation") {
+			
+			Debug.Log("Temtation Entered!");
 
 			    transform.LookAt(other.transform);
      

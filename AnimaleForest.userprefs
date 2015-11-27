@@ -1,13 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\ThirdPersonCamera.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChaseItem.js">
     <Files>
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="65" Column="18" />
-      <File FileName="AnimaleForest.sln" Line="47" Column="1" />
-      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\ThirdPersonCamera.cs" Line="24" Column="38" />
-      <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\FakeSniperView\FakeSniperView.js" Line="1" Column="1" />
-      <File FileName="c:\A Carver\Unity\0SOURCES\AnimaleForest\Assets\Global_Texture\Plugins\ChatApi\ChatClient.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="45" Column="1" />
+      <File FileName="Assets\Global_Scripts\networkController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

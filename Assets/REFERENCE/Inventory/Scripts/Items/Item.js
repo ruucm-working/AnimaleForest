@@ -63,8 +63,10 @@ function OnCollisionEnter(collision: Collision) {
 //	}
 //	if (collision.relativeVelocity.magnitude > 2)
 //		audio.Play();
-		if(collision.gameObject.tag == "Blue")
-				PickUpItem();
+
+
+if(collision.gameObject.tag == "Blue")
+		PickUpItem();
 }
 
 

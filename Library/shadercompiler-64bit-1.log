@@ -1,3 +1,26 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-1992
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-2128
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=325182 outsize=325182 ok=1
+Cmd: preprocess
+  insize=1048 outsize=1048 ok=1
+Cmd: preprocess
+  insize=967 outsize=967 ok=1
+Cmd: preprocess
+  error: 2 plat 18 at (50): Can't find include file MobileInclude.cginc
+  insize=2414 outsize=652 ok=0
+Cmd: preprocess
+  insize=1105 outsize=1105 ok=1
+Cmd: preprocess
+  insize=519492 outsize=519492 ok=1
+Cmd: preprocess
+  insize=309765 outsize=309765 ok=1
+Cmd: preprocess
+  insize=1035 outsize=1035 ok=1
+Cmd: preprocess
+  insize=478456 outsize=478456 ok=1
+Cmd: preprocess
+  insize=506289 outsize=506289 ok=1
+Cmd: preprocess
+  insize=933 outsize=933 ok=1
