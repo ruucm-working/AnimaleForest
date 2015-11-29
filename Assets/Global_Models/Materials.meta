@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6d4f0aef2081ec9458be5fea9ec6c3dd
 folderAsset: yes
 timeCreated: 1447741780
 licenseType: Pro
+=======
+guid: db3c6e1e1167fcf43a96b8c92ce2e80b
+folderAsset: yes
+timeCreated: 1448634502
+licenseType: Free
+>>>>>>> refs/remotes/origin/yjw02+pjw
 DefaultImporter:
   userData: 
   assetBundleName: 
