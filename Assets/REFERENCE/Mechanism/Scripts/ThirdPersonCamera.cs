@@ -27,9 +27,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
 		 
 		 
-		Debug.Log ("follow.forward : "+follow.forward); 
-		Debug.Log ("follow.up : "+follow.up); 
-		Debug.Log ("follow.rotation : "+follow.rotation); 
+//		Debug.Log ("follow.forward : "+follow.forward); 
+//		Debug.Log ("follow.up : "+follow.up); 
+//		Debug.Log ("follow.rotation : "+follow.rotation); 
 
 
 		

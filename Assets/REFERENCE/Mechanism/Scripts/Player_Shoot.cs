@@ -33,10 +33,10 @@ public class Player_Shoot : MonoBehaviour {
 			if(m_Timer > 0.1f) // firing rate
 			{
 				GameObject newBullet = Instantiate(Bullet, BulletSpawnPoint.position , Quaternion.Euler(0, 0, 0)) as GameObject;		  										
-				Destroy(newBullet, m_BulletDuration);										
+//				Destroy(newBullet, m_BulletDuration);										
 				newBullet.GetComponent<Rigidbody>().velocity = -BulletSpawnPoint.forward* m_BulletSpeed;						
 				newBullet.GetComponent<DamageProvider>().SetScaleBullet(); 
-				newBullet.SetActive(true);
+				newBullet.SetActive(true); 
 			
 				if(BulletParent) newBullet.transform.parent = BulletParent;
 				

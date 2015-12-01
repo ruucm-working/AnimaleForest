@@ -15,9 +15,9 @@ public class dropWeapon : MonoBehaviour {
 		//		if (collision.relativeVelocity.magnitude > 2)
 		//			audio.Play();
 		
-		Debug.Log ("collision.gameObject : " + collision.gameObject);
+		Debug.Log ("ItemTree collision.gameObject : " + collision.gameObject);
 		
-		if (collision.gameObject.tag == "Blue") {
+		if (collision.gameObject.tag == "Player") {
 			Debug.Log("Drop It!");
 			animManager.Play (drop_d.name);
 			animManager2.Play (drop_d.name);

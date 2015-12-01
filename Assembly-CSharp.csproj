@@ -105,6 +105,7 @@
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Karma.cs" />
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Locomotion.cs" />
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\LookAhead.cs" />
+     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_ChaseItem.cs" />
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_DamageReceiver.cs" />
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_Patrol.cs" />
      <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_ShootPlayer.cs" />
@@ -231,17 +232,11 @@
      <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
      <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
