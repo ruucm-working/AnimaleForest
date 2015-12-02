@@ -31,8 +31,14 @@ public class Player : MonoBehaviour {
 		{
             JoystickToWorld.ComputeSpeedDirection(transform,ref m_Speed, ref m_Direction);		
 		}
-		
-		
+//
+//		Ray ray = new Ray (transform.position, transform.up * -1);
+//		RaycastHit hitInfo = new RaycastHit ();
+//		if (Physics.Raycast (ray, out hitInfo)) {
+//			transform.position = hitInfo.point;
+//			transform.up = hitInfo.normal;
+//		}
+//		
 		m_Locomotion.Do(m_Speed * 6, m_Direction * 180);
 		
 		m_Animator.SetBool("HoldLog", hasLog);
