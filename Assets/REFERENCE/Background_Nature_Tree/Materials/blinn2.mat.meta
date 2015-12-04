@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 94cecb9a71a7b48438e1c8cc53a8df4e
 timeCreated: 1449263813
+=======
+guid: 86014feb24ffc4be2abf5330ef769f55
+timeCreated: 1449070126
+>>>>>>> pje_151204
 licenseType: Free
 NativeFormatImporter:
   userData: 
