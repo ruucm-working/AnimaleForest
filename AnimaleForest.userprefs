@@ -1,13 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CamFollow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChaseItem.js">
     <Files>
-      <File FileName="..\..\INTERACTIVE\Paparazzi\Assets\Scripts\RestroomClickButton.cs" Line="14" Column="52" />
+      <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="52" Column="50" />
+      <File FileName="Assets\CamFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Mechanism\Scripts\ThirdPersonCamera.cs" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Mechanism\Scripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Mechanism\Scripts\Locomotion.cs" Line="1" Column="1" />
-      <File FileName="Assets\FollowCam.cs" Line="5" Column="26" />
-      <File FileName="Assets\CamFollow.cs" Line="11" Column="36" />
+      <File FileName="Assets\Global_Scripts\roomManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\getWeapon.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\REFERENCE\Mechanism\Scripts\Player_Shoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\REFERENCE\Mechanism\Scripts\DamageProvider.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\POLICEscript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="13" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

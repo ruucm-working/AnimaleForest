@@ -49,6 +49,8 @@
      <Compile Include="Assets\FollowCam.cs" />
      <Compile Include="Assets\Global_Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
+     <Compile Include="Assets\Global_Scripts\POLICEscript.cs" />
+     <Compile Include="Assets\Global_Scripts\Patrol.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting_bu.cs" />
      <Compile Include="Assets\Global_Scripts\SmoothMouseLook.cs" />

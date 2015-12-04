@@ -1,9 +1,21 @@
 ﻿ var Item : Transform;
+ 
+ var UI : GameObject;
+ 
+ 
  var MoveSpeed = 4;
  var MaxDist = 10;
  var MinDist = 5;
  var m_Animator = null ; 
  var tameCount = 0;
+ 
+ 
+ //Variable for ChasePlayer
+ var trailPlayerSw = false; 
+ 
+ var pMoveSpeed = 4;
+ var pMaxDist = 10;
+ var pMinDist = 5;
  
  
  function Start () 
@@ -18,20 +30,42 @@
  function Update () 
  {
  
-//     transform.LookAt(Item);
-//     
-//     if(Vector3.Distance(transform.position,Item.position) >= MinDist){
-//     
-//          transform.position += transform.forward*MoveSpeed*Time.deltaTime;
-// 
-//           
-//           
-//          if(Vector3.Distance(transform.position,Item.position) <= MaxDist)
-//              {
-//                 //Here Call any function U want Like Shoot at here or something
-//    } 
-//    
-//    }
+ 
+ 		if(trailPlayerSw){
+		     transform.LookAt(Item);
+		     
+		     if(Vector3.Distance(transform.position,Item.position) >= pMinDist){
+		     
+		          transform.position += transform.forward*pMoveSpeed*Time.deltaTime;
+		 
+		           
+		           
+		          if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
+		              {
+		                 //Here Call any function U want Like Shoot at here or something
+		    } 
+		    
+		    }
+		    
+		    
+		    
+		    	if(UI.transform.localScale.magnitude < 1.5 )
+				{
+					UI.transform.localScale *= 1 + Time.deltaTime / 0.25f;  // makes bullet scale overtime
+
+					Debug.Log("transform.localScale : "+transform.localScale);
+
+				}
+
+
+		}
+		
+		
+		
+		
+		
+		
+		
  }
  
  
@@ -67,20 +101,23 @@ function OnTriggerStay (other : Collider) {
 		          if(Vector3.Distance(transform.position,other.transform.position) <= MaxDist)
 		              {
 		                 //Here Call any function U want Like Shoot at here or something
+		                 Debug.Log("MaxDist (Lower) - other.gameObjec : "+other.gameObject );
 		                 Destroy (other.gameObject);
-		                 tameCount += 1;
-		    } 
+//		                 if(other.gameObject == null){
+		                	 tameCount += 1;
+		                	 Debug.Log("tameCount : "+tameCount);
+//		                	 }
+		  			  } 
 		    }
 
 
 
 			m_Animator.SetBool("isWalking", true); // tell animator to shoot
 			
-			if(tameCount >3) 
+			if(tameCount >3) {
 				m_Animator.SetBool("isJumping", true); // tell animator to shoot
-
-			
-
+				trailPlayerSw = true;
+			}
 			}
 //			else
 				

@@ -3,16 +3,14 @@ using System.Collections;
 
 public class getWeapon : MonoBehaviour
 {
-	
-	
+
+
+
+
 	
 //	public static bool Gun1,Gun2 = false; 
 
-
-
-
-	//{shot, fire, donut}
-	public static bool[] weapon = {true, false,  false, false, false };
+	public static bool[] weapon = {true, false,  false, false, false ,false};
 
 
 
@@ -28,6 +26,11 @@ public class getWeapon : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+
+
+
+	
+
 		
 	}
 	
@@ -80,6 +83,15 @@ public class getWeapon : MonoBehaviour
 			weapon[4] = true;
 			
 		}
+		else if (other.gameObject.tag == "Candy") {
+			Destroy (other.gameObject);
+			
+			//			weaponNum = 2;
+			Debug.Log ("Get other.gameObject : " + other.gameObject);
+			
+			weapon[5] = true;
+			
+		}
 
 
 //		if (other.gameObject.tag == "Donut") {
@@ -98,6 +110,8 @@ public class getWeapon : MonoBehaviour
 		
 		
 	}
+
+
 
 
 	

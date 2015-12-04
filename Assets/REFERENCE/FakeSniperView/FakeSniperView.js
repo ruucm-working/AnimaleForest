@@ -20,8 +20,7 @@ function Update()
 	// Press S to switch sniper view on/off
     if (Input.GetMouseButtonDown(1))
 	{
-		sniperMode=!sniperMode; // invert mode
-		
+		sniperMode=!sniperMode; // invert mode		
 		Camera.main.fieldOfView = sniperMode ? 20 : 60; // zoom effect while in sniper mode, we adjust FOV
 	}
 }
