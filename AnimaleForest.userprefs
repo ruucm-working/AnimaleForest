@@ -7,9 +7,7 @@
       <File FileName="Assets\Global_Scripts\RaycastShooting_bu.cs" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_Patrol.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\Buoyancy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="25" Column="2" />
-      <File FileName="Assets\Global_Scripts\ItemSpawner.cs" Line="1" Column="1" />
-      <File FileName="Assets\CamFollow.cs" Line="33" Column="76" />
+      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="16" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
