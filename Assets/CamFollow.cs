@@ -6,6 +6,12 @@ public class CamFollow : MonoBehaviour {
 	public Transform FarCamPos;
 	public Transform NearCamPos;
 
+	public bool aSwitch;
+//	public float ;
+
+//	public 
+
+
 	int posNum ;
 
 
@@ -20,9 +26,21 @@ public class CamFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 //		transform.position = camPos.position;
-		transform.position = Vector3.Lerp (transform.position, camPos.position, 1 * Time.deltaTime);
-		transform.forward = Vector3.Lerp (transform.forward, camPos.forward, 1 * Time.deltaTime);
 
+//		if(transform.position )
+
+	
+		transform.position = Vector3.Lerp (transform.position, camPos.position, 3f * Time.deltaTime);
+		transform.forward = Vector3.Lerp (transform.forward, camPos.forward, 3f * Time.deltaTime);
+
+
+		if ( Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) {
+
+		
+
+
+
+		}
 
 
 		if (Input.GetMouseButtonDown (1)) {
