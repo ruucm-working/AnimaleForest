@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\CamFollow.cs" />
      <Compile Include="Assets\FollowCam.cs" />
+     <Compile Include="Assets\Global_Scripts\Buoyancy.cs" />
      <Compile Include="Assets\Global_Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
      <Compile Include="Assets\Global_Scripts\POLICEscript.cs" />
@@ -99,26 +100,26 @@
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Action.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Bazooka.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\CollectLog.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\CollectPopsicle.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\DamageProvider.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\DamageReceiver.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\JoystickToWorld.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Karma.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Locomotion.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\LookAhead.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_ChaseItem.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_DamageReceiver.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_Patrol.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\NPC_ShootPlayer.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Player.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Player_Shoot.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Recorder.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Reset.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\Spawner.cs" />
-     <Compile Include="Assets\REFERENCE\Mechanism\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Action.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Bazooka.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\CollectLog.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\CollectPopsicle.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\DamageProvider.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\DamageReceiver.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\JoystickToWorld.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Karma.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Locomotion.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\LookAhead.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_ChaseItem.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_DamageReceiver.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_Patrol.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_ShootPlayer.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Player.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Player_Shoot.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Recorder.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Reset.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Spawner.cs" />
+     <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -210,43 +211,37 @@
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointProgressTracker.cs" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\MobileReflectiveBumped.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\MobileReflectiveBumped.shader" />
      <None Include="Assets\Global_Texture\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Global_Texture\Plugins\release_history.txt" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent Diffuse.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent Diffuse.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Diffuse.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Diffuse.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\Fonts\OpenSans\License!.txt" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Bump.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Bump.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Diffuse.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Diffuse.shader" />
      <None Include="Assets\REFERENCE\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
-     <None Include="Assets\REFERENCE\Mechanism\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
+     <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />
      <None Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\changelog.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/A Carver/Unity/0SOURCES/AnimaleForest/Assets/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>

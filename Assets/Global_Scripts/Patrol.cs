@@ -12,6 +12,8 @@ public class Patrol : MonoBehaviour {
 	
 	void Start () {
 		agent = GetComponent<NavMeshAgent>();
+
+		Debug.Log ("agent : "+agent);
 		
 		// Disabling auto-braking allows for continuous movement
 		// between points (ie, the agent doesn't slow down as it
@@ -39,6 +41,8 @@ public class Patrol : MonoBehaviour {
 	void Update () {
 		// Choose the next destination point when the agent gets
 		// close to the current one.
+		 
+		Debug.Log ("agent.remainingDistance  : "+agent.remainingDistance );
 		if (agent.remainingDistance < 0.5f)
 			GotoNextPoint();
 	}
