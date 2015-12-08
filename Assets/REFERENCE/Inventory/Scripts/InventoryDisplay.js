@@ -124,7 +124,7 @@ function OnGUI()
 	//If the inventory is opened up we create the Inventory window:
 	if(displayInventory)
 	{
-		windowRect = GUI.Window (0, windowRect, DisplayInventoryWindow, "Inventory");
+		windowRect = GUI.Window (0, windowRect, DisplayInventoryWindow, "");
 	}
 }
 

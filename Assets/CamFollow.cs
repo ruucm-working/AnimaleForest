@@ -15,13 +15,13 @@ public class CamFollow : MonoBehaviour {
 		posNum = 0;
 		camPos = FarCamPos;
 
-	}
+	} 
 	
 	// Update is called once per frame
 	void Update () {
 //		transform.position = camPos.position;
-		transform.position = Vector3.Lerp (transform.position, camPos.position, 1 * Time.deltaTime);
-		transform.forward = Vector3.Lerp (transform.forward, camPos.forward, 1 * Time.deltaTime);
+		transform.position = Vector3.Lerp (transform.position, camPos.position, 0.5f * Time.deltaTime);
+		transform.forward = Vector3.Lerp (transform.forward, camPos.forward, 0.5f * Time.deltaTime);
 
 
 

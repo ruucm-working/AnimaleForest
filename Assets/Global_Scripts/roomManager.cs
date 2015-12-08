@@ -104,13 +104,12 @@ public class roomManager : Photon.MonoBehaviour {
 		if (currentTeam == team1) {
 			gameUIParent.SetActive (false);
 			GameObject player = PhotonNetwork.Instantiate (player1.name, spawn1.position, spawn1.rotation, 0) as GameObject;
-			player.transform.FindChild("Main Camera").gameObject.SetActive(true);
+//			player.transform.FindChild("Main Camera").gameObject.SetActive(true);
 			//				player.transform.FindChild("Graphics").gameObject.SetActive(true);
-			((MonoBehaviour)player.GetComponent ("networkController")).enabled = true;	
-			((MonoBehaviour)player.GetComponent ("MouseLook")).enabled = true;	
+//			((MonoBehaviour)player.GetComponent ("networkController")).enabled = true;	
+//			((MonoBehaviour)player.GetComponent ("MouseLook")).enabled = true;				
 			
-			
-		}
+		} 
 		
 		//Blue Player
 		if (currentTeam == team2) {
@@ -118,10 +117,10 @@ public class roomManager : Photon.MonoBehaviour {
 			Debug.Log("spawnPlayer(), team2");
 			gameUIParent.SetActive (false);
 			GameObject player = PhotonNetwork.Instantiate (player2.name, spawn2.position, spawn2.rotation, 0) as GameObject;
-			player.transform.FindChild("Main Camera").gameObject.SetActive(true);
+//			player.transform.FindChild("Main Camera").gameObject.SetActive(true);
 			
-			player.transform.FindChild("Graphics").gameObject.SetActive(true);
-			((MonoBehaviour)player.GetComponent ("networkController")).enabled = true;	
+//			player.transform.FindChild("Graphics").gameObject.SetActive(true);
+//			((MonoBehaviour)player.GetComponent ("networkController")).enabled = true;	
 //			((MonoBehaviour)player.GetComponent ("MouseLook")).enabled = true;	
 			
 		}
