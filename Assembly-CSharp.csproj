@@ -47,9 +47,11 @@
   <ItemGroup>
      <Compile Include="Assets\CamFollow.cs" />
      <Compile Include="Assets\FollowCam.cs" />
+     <Compile Include="Assets\Global_Scripts\BasicEnemy.cs" />
      <Compile Include="Assets\Global_Scripts\Buoyancy.cs" />
      <Compile Include="Assets\Global_Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Global_Scripts\EnemySight.cs" />
+     <Compile Include="Assets\Global_Scripts\EnemyTerritory.cs" />
      <Compile Include="Assets\Global_Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
      <Compile Include="Assets\Global_Scripts\POLICEscript.cs" />
