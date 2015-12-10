@@ -210,11 +210,11 @@ function Update ()
 		else
 		{
 			csheet = true;
-			if (invDispKeyIsSame != true) 
+			if (invDispKeyIsSame != true)
 			{
 				gameObject.SendMessage ("ChangedState", true, SendMessageOptions.DontRequireReceiver); //Play sound
 				gameObject.SendMessage("PauseGame", true, SendMessageOptions.DontRequireReceiver); //PauseGame/DisableMouse/HideMouse
-			} 
+			}
 		}
 	}
 }
@@ -227,7 +227,7 @@ function OnGUI()
 	if(csheet) //If the csheet is opened up.
 	{
 		//Make a window that shows what's in the csheet called "Character" and update the position and size variables from the window variables.
-		windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "");
+		windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "Character");
 	}
 }
 
