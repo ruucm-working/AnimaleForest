@@ -8,6 +8,8 @@ public class BasicEnemy : MonoBehaviour
 	public float attack1Range = 1f;
 	public int attack1Damage = 1;
 	public float timeBetweenAttacks;
+
+	public bool moveSwitch = true;
 	
 	
 	// Use this for initialization
@@ -19,20 +21,34 @@ public class BasicEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+	
 	}
 	
 	public void MoveToPlayer ()
 	{
 		//rotate to look at player
-		transform.LookAt (target.position);
-//		transform.Rotate (new Vector3 (0, -90, 0), Space.Self);
+
+//		transform.Rotate (new Vector3 (0, -90, 0), Space.World);
+
+
+		Debug.Log ("moveSwitch : "+moveSwitch);
 		
 		//move towards player
-//		if (Vector3.Distance (transform.position, target.position) > attack1Range) 
-//		{
-			transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
-//		}
+		if (Vector3.Distance (transform.position, target.position) > attack1Range && moveSwitch) {
+//			transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
+
+			transform.LookAt (target.position);
+			transform.position = Vector3.Lerp (transform.position, target.position, 0.1f * Time.deltaTime);
+
+//			moveSwitch = true;
+
+		} else {
+
+			moveSwitch= false;
+		}
+	
+
+
 	}
 	
 	public void Rest ()

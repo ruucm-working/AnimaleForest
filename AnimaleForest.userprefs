@@ -1,15 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\BasicEnemy.cs">
     <Files>
-      <File FileName="..\Stealth\Assets\Done\DoneScripts\AlarmSystems\DoneAlarmLight.cs" Line="19" Column="3" />
+      <File FileName="Assets\Global_Scripts\BasicEnemy.cs" Line="58" Column="2" />
+      <File FileName="Assets\Global_Scripts\EnemyTerritory.cs" Line="1" Column="1" />
+      <File FileName="..\Stealth\Assets\Done\DoneScripts\AlarmSystems\DoneAlarmLight.cs" Line="1" Column="1" />
       <File FileName="..\Stealth\Assets\Done\DoneScripts\AlarmSystems\DoneLaserBlinking.cs" Line="1" Column="1" />
       <File FileName="..\Stealth\Assets\Done\DoneScripts\AlarmSystems\DoneLaserPlayerDetection.cs" Line="1" Column="1" />
       <File FileName="..\Stealth\Assets\Done\DoneScripts\AlarmSystems\DoneLaserSwitchDeactivation.cs" Line="1" Column="1" />
       <File FileName="..\Stealth\Assets\Done\DoneScripts\PlayerScripts\DonePlayerMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\EnemyAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\EnemyTerritory.cs" Line="52" Column="2" />
-      <File FileName="Assets\Global_Scripts\BasicEnemy.cs" Line="29" Column="60" />
+      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_Patrol.cs" Line="1" Column="1" />
+      <File FileName="Assets\CamFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Character.js" Line="23" Column="76" />
+      <File FileName="Assets\Global_Scripts\getWeapon.cs" Line="21" Column="3" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="67" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
