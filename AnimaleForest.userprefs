@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\BasicEnemy.cs">
     <Files>
-      <File FileName="Assets\REFERENCE\Standard Assets\Utility\EventSystemChecker.cs" Line="17" Column="32" />
-      <File FileName="Assets\Global_Scripts\BasicEnemy.cs" Line="24" Column="3" />
-      <File FileName="Assets\CamFollow.cs" Line="23" Column="21" />
+      <File FileName="Assets\Global_Scripts\BasicEnemy.cs" Line="42" Column="67" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

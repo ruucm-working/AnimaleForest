@@ -21,24 +21,35 @@ public class BasicEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+	
 	}
 	
 	public void MoveToPlayer ()
 	{
 		//rotate to look at player
 
-//		transform.Rotate (new Vector3 (0, -90, 0), Space.Self);
+
+//		transform.Rotate (new Vector3 (0, -90, 0), Space.World);
+
+
+		Debug.Log ("moveSwitch : "+moveSwitch);
 		
 		//move towards player
 		if (Vector3.Distance (transform.position, target.position) > attack1Range && moveSwitch) {
-			transform.LookAt (target.position);
 //			transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
+
+			transform.LookAt (target.position);
 			transform.position = Vector3.Lerp (transform.position, target.position, 0.1f * Time.deltaTime);
 
+//			moveSwitch = true;
+
 		} else {
-			moveSwitch = false;
+
+			moveSwitch= false;
 		}
+	
+
+
 	}
 	
 	public void Rest ()
