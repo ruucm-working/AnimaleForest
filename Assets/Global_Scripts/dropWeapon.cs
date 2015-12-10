@@ -4,7 +4,7 @@ using System.Collections;
 public class dropWeapon : MonoBehaviour {
 
 
-	public Animation animManager, animManager2;
+	public Animation animManager;
 	
 	public AnimationClip drop_d, drop_d2;
 
@@ -19,6 +19,8 @@ public class dropWeapon : MonoBehaviour {
 		
 		if (collision.gameObject.tag == "Player") {
 			Debug.Log("Drop It!");
+
+			Debug.Log("animManager : "+animManager);
 			animManager.Play (drop_d.name);
 //			animManager2.Play (drop_d.name);
 

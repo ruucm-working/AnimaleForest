@@ -41,7 +41,7 @@ public class DamageProvider : MonoBehaviour
 		{
 			transform.localScale *= 1 + Time.deltaTime / 0.25f;  // makes bullet scale overtime
 
-			Debug.Log("transform.localScale : "+transform.localScale);
+//			Debug.Log("transform.localScale : "+transform.localScale);
 
 		}
 	}
