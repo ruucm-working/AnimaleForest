@@ -42,7 +42,7 @@ public class Patrol : MonoBehaviour {
 		// Choose the next destination point when the agent gets
 		// close to the current one.
 		 
-		Debug.Log ("agent.remainingDistance  : "+agent.remainingDistance );
+//		Debug.Log ("agent.remainingDistance  : "+agent.remainingDistance );
 		if (agent.remainingDistance < 0.5f)
 			GotoNextPoint();
 	}
