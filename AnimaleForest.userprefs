@@ -1,13 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\Patrol.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js">
     <Files>
-      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="172" Column="15" />
+      <File FileName="Assets\Global_Scripts\EnemyAI.cs" Line="124" Column="5" />
+      <File FileName="Assets\Global_Scripts\RaycastShooting.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\RaycastShooting_bu.cs" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\NPC_Patrol.cs" Line="1" Column="1" />
       <File FileName="Assets\Global_Scripts\Buoyancy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="16" Column="32" />
+      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="1" Column="1" />
+      <File FileName="Assets\Global_Scripts\EnemySight.cs" Line="1" Column="1" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Inventory.js" Line="12" Column="32" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js" Line="127" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
