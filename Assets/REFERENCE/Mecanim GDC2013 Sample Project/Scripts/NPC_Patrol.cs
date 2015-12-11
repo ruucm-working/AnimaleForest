@@ -45,7 +45,7 @@ public class NPC_Patrol : MonoBehaviour {
 					Vector3 wantedDir = (target.position - m_Animator.rootPosition).normalized;
 		
 
-					Debug.Log("Vector3.Dot(curentDir,wantedDir)"+Vector3.Dot(curentDir,wantedDir));
+//					Debug.Log("Vector3.Dot(curentDir,wantedDir)"+Vector3.Dot(curentDir,wantedDir));
 					if(Vector3.Dot(curentDir,wantedDir) > 0)
 					{
 						m_Animator.SetFloat("Direction",Vector3.Cross(curentDir,wantedDir).y,m_DirectionDampTime, Time.deltaTime);

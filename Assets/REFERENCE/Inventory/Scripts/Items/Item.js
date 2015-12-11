@@ -7,6 +7,9 @@ var stack = 1; //This is how many stack counts this Item will take up.
 var isEquipment = true; //Can the Item be equipped? This includes weapons.
 var isAlsoWeapon = false; //Is the Item also a Weapon? This only works with isEquipment set to true.
 
+var animator : Animator; //stores the animator component
+
+
 //This is the object we will instantiate in the Players hand.
 //We use this so we can have two versions of the weapon. One for picking up and one for using.
 var equippedWeaponVersion : Transform;
@@ -45,6 +48,11 @@ function Awake ()
 	{
 		FPPickUpFound = true;
 	}
+	
+	
+	animator = GetComponent(Animator); //assigns Animator component when we start the game
+
+	
 }
 
 //When you click an item
@@ -64,9 +72,15 @@ function OnCollisionEnter(collision: Collision) {
 //	if (collision.relativeVelocity.magnitude > 2)
 //		audio.Play();
 
+Debug.Log("animator.GetBool(isJumping) : "+animator.GetBool("isJumping"));
 
-if(collision.gameObject.tag == "Player")
+if(collision.gameObject.tag == "Player" && animator.GetBool("isJumping") ){
+		
+		
+		Debug.Log("PickUpItem");
 		PickUpItem();
+		
+		}
 }
 
 

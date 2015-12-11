@@ -6,7 +6,7 @@ public class dropWeapon : MonoBehaviour {
 
 	public Animation animManager;
 	
-	public AnimationClip drop_d, drop_d2;
+	public AnimationClip drop_d;
 
 	void OnCollisionEnter(Collision collision) {
 		//		foreach (ContactPoint contact in collision.contacts) {
