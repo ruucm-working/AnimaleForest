@@ -5,6 +5,8 @@
 // var script : Patrol = GetComponent("Patrol");
  
  
+ static var item_script : Item;
+ 
  var MoveSpeed = 4;
  var MaxDist = 10;
  var MinDist = 5;
@@ -14,6 +16,7 @@
  
  //Variable for ChasePlayer
  var trailPlayerSw = false; 
+ var isTamed = false;
  
  var pMoveSpeed = 4;
  var pMaxDist = 10;
@@ -26,7 +29,7 @@
  		m_Animator = GetComponent.<Animator>();
 		m_Animator.logWarnings = false; // so we dont get warning when updating controller in live link ( undocumented/unsupported function!)
 		Debug.Log ("m_Animator : "+m_Animator);
-		
+
 
  }
  
@@ -117,7 +120,7 @@ function OnTriggerStay (other : Collider) {
 
 			m_Animator.SetBool("isWalking", true); // tell animator to shoot
 			
-			if(tameCount >3) {
+			if(tameCount >= 3 && !isTamed) {
 			
 				Debug.Log("Tame Success!");
 				m_Animator.SetBool("isJumping", true); // tell animator to shoot
@@ -125,8 +128,11 @@ function OnTriggerStay (other : Collider) {
 										  
 				  GetComponent("Patrol").enabled = false; 
   				  GetComponent("NavMeshAgent").enabled = false; 
+  				  		
+			      GetComponent("Item").PickUpItem();//finding the players inv.
 
-				
+				isTamed = true;
+							
 			
 			}
 			}

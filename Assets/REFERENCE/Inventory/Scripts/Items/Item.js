@@ -55,6 +55,22 @@ function Awake ()
 	
 }
 
+// function Update () {
+//
+//
+//Debug.Log("animator.GetBool(isJumping) : "+animator.GetBool("isJumping"));
+//
+//
+//if(animator.GetBool("isJumping") ){
+//				
+//		Debug.Log("Pick UP Animale");
+//		PickUpItem();	
+//		
+//}
+
+
+//}
+
 //When you click an item
 function OnMouseDown()
 {
@@ -72,18 +88,18 @@ function OnCollisionEnter(collision: Collision) {
 //	if (collision.relativeVelocity.magnitude > 2)
 //		audio.Play();
 
-Debug.Log("animator.GetBool(isJumping) : "+animator.GetBool("isJumping"));
+//Debug.Log("animator.GetBool(isJumping) : "+animator.GetBool("isJumping"));
 
-if(collision.gameObject.tag == "Player" && animator.GetBool("isJumping") ){
-		
-		
-		Debug.Log("PickUpItem");
-		PickUpItem();
-		
-		}
+//if(collision.gameObject.tag == "Player" && animator.GetBool("isJumping") ){
+//		
+//		
+//		Debug.Log("PickUpItem");
+//		PickUpItem();
+//		
+//		}
+//}
+
 }
-
-
 
 //Picking up the Item.
 function PickUpItem ()
@@ -110,13 +126,13 @@ function PickUpItem ()
 			}
 			else{
 				getit=true;
-			}
+			} 
 		}
 		//If we can get it and the inventory isn't full.
 		if (getit && playersinv.Contents.length < playersinv.MaxContent)
 		{
 			playersinv.AddItem(this.transform);
-			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+//			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
 		}
 		else if (playersinv.Contents.length >= playersinv.MaxContent)
 		{
