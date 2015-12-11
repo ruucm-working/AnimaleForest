@@ -29,18 +29,18 @@ else
  
 }
  
-function FixedUpdate () {
+		function FixedUpdate () {
  
  
 //Debug.Log("getAxis v :"+v);
 //
 //Debug.Log("animator :"+animator);
 //set the "Walk" parameter to the v axis value
-animator.SetFloat ("isWalking", v);
-animator.SetFloat ("Turn", h);
-animator.SetFloat("Sprint", sprint);
+							animator.SetFloat ("isWalking", v);
+				animator.SetFloat ("Turn", h);
+				animator.SetFloat("Sprint", sprint);
 
-animator.SetBool("isJumping",isJump);
+				animator.SetBool("isJumping",isJump);
  
 }
  

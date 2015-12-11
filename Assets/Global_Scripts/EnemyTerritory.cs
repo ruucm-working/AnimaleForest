@@ -38,6 +38,7 @@ public class EnemyTerritory : MonoBehaviour
 		if (other.gameObject == player)
 		{
 			playerInTerritory = true;
+			BasicEnemy.moveSwitch = true;
 		}
 	}
 

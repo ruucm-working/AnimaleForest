@@ -8,14 +8,15 @@ public class BasicEnemy : MonoBehaviour
 	public float attack1Range = 1f;
 	public int attack1Damage = 1;
 	public float timeBetweenAttacks;
-
-	public bool moveSwitch = true;
+	public static bool moveSwitch ;
 	
 	
 	// Use this for initialization
 	void Start ()
 	{
 		Rest ();
+
+
 	}
 	
 	// Update is called once per frame
@@ -32,8 +33,25 @@ public class BasicEnemy : MonoBehaviour
 //		transform.Rotate (new Vector3 (0, -90, 0), Space.World);
 
 
-		Debug.Log ("moveSwitch : "+moveSwitch);
+		Debug.Log ("moveSwitch : " + moveSwitch);
+
+//		GetComponent("Patrol").enabled = false; 
+//		GetComponent("NavMeshAgent").enabled = false; 
+
+
+		if (moveSwitch) {
 		
+			gameObject.GetComponent<Patrol> ().enabled = false; 
+			gameObject.GetComponent<NavMeshAgent> ().enabled = false; 
+
+		} else {
+		
+			gameObject.GetComponent<Patrol> ().enabled = true; 
+			gameObject.GetComponent<NavMeshAgent> ().enabled = true; 
+		
+		}
+
+
 		//move towards player
 		if (Vector3.Distance (transform.position, target.position) > attack1Range && moveSwitch) {
 //			transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
@@ -45,7 +63,7 @@ public class BasicEnemy : MonoBehaviour
 
 		} else {
 
-			moveSwitch= false;
+			moveSwitch = false;
 		}
 	
 

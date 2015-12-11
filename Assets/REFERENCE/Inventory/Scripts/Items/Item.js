@@ -59,10 +59,10 @@ function Awake ()
 function OnMouseDown()
 {
 	//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
-	if (FPPickUpFound == false)
-	{
-		PickUpItem();
-	}
+//	if (FPPickUpFound == false)
+//	{
+//		PickUpItem();
+//	}
 }
 
 function OnCollisionEnter(collision: Collision) {

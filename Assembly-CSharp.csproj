@@ -63,7 +63,6 @@
      <Compile Include="Assets\Global_Scripts\UnityClipCursor.cs" />
      <Compile Include="Assets\Global_Scripts\dropWeapon.cs" />
      <Compile Include="Assets\Global_Scripts\getWeapon.cs" />
-     <Compile Include="Assets\Global_Scripts\networkController.cs" />
      <Compile Include="Assets\Global_Scripts\networkView.cs" />
      <Compile Include="Assets\Global_Scripts\photonDestroy.cs" />
      <Compile Include="Assets\Global_Scripts\playerName.cs" />
