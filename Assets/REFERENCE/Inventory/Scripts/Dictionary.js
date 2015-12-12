@@ -1,6 +1,12 @@
 //The Character window (CSheet).
 
+
+private var associatedInventory : Inventory;
 var WeaponSlot : Transform; //This is where the Weapons are going to go (be parented too). In my case it's the "Melee" gameobject.
+private var lastUpdate = 0.0; //Last time we updated the display.
+var updateListDelay = 9999;//This can be used to update the Inventory with a certain delay rather than updating it every time the OnGUI is called.
+
+
 
 private var ArmorSlot : Item[]; //This is the built in Array that stores the Items equipped. You can change this to static if you want to access it from another script.
 var ArmorSlotName : String[]; //This determines how many slots the character has (Head, Legs, Weapon and so on) and the text on each slot.
@@ -47,7 +53,19 @@ function Awake ()
 	{
 		invDispKeyIsSame = true;
 	}
+	
+	
+	associatedInventory=GetComponent(Inventory);//keepin track of the inventory script
+
 }
+
+function UpdateInventoryList()
+{
+	UpdatedList = associatedInventory.DictionaryContents;
+	//Debug.Log("Inventory Updated");
+}
+
+
 
 //Take care of the array lengths.
 function Start ()
@@ -217,6 +235,15 @@ function Update ()
 			}
 		}
 	}
+	
+	
+		//Updating the list by delay
+	if(Time.time>lastUpdate){
+		lastUpdate=Time.time+updateListDelay;
+		UpdateInventoryList();
+	}
+	
+	
 }
 
 //Draw the Character Window

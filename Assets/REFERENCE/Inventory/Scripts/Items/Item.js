@@ -204,7 +204,7 @@ var getit=true;
 		//If we can get it and the inventory isn't full.
 		if (getit && playersinv.Contents.length < playersinv.MaxContent)
 		{
-			playersinv.AddItem(this.transform);
+			playersinv.AddDictionary(this.transform);
 //			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
 		}
 		else if (playersinv.Contents.length >= playersinv.MaxContent)

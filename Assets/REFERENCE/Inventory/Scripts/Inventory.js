@@ -1,6 +1,7 @@
 //This is the central piece of the Inventory System.
 
 var Contents : Transform[]; //The content of the Inventory
+var DictionaryContents : Transform[]; //The content of the Inventory
 var MaxContent : int = 12; //The maximum number of items the Player can carry.
 
 var DebugMode = false; //If this is turned on the Inventory script will output the base of what it's doing to the Console window.
@@ -30,6 +31,26 @@ function AddItem(Item:Transform)
 	var newContents = new Array(Contents);
 	newContents.Add(Item);
 	Contents=newContents.ToBuiltin(Transform); //Array to unity builtin array
+	
+	if (DebugMode)
+	{
+		Debug.Log(Item.name+" has been added to inventroy");
+	}
+	
+	//Tell the InventoryDisplay to update the list.
+	if (playersInvDisplay != null)
+	{
+		playersInvDisplay.UpdateInventoryList();
+	}
+}
+
+
+//Add an item to the inventory.
+function AddDictionary(Item:Transform)
+{
+	var newContents = new Array(DictionaryContents);
+	newContents.Add(Item);
+	DictionaryContents=newContents.ToBuiltin(Transform); //Array to unity builtin array
 	
 	if (DebugMode)
 	{

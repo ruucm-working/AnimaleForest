@@ -1,15 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\getWeapon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChaseItem.js">
     <Files>
-      <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="133" Column="1" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="99" Column="5" />
+      <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="132" Column="38" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="201" Column="1" />
       <File FileName="Assets\REFERENCE\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js" Line="1" Column="1" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js" Line="129" Column="26" />
       <File FileName="Assets\REFERENCE\Inventory\Scripts\Dictionary.js" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Inventory\Resources\Editor\InventoryEditor.js" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Tame.js" Line="133" Column="3" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Tame.js" Line="151" Column="16" />
       <File FileName="Assets\Global_Scripts\getWeapon.cs" Line="7" Column="1" />
+      <File FileName="Assets\GetAnythings.js" Line="25" Column="1" />
+      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Player_Shoot.cs" Line="9" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
