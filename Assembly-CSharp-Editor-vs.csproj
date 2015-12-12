@@ -64,8 +64,8 @@
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\MobileReflectiveBumped.shader" />
-     <None Include="Assets\Global_Texture\Plugins\Photon3Unity3D.xml" />
-     <None Include="Assets\Global_Texture\Plugins\release_history.txt" />
+     <None Include="Assets\REFERENCE\Global_Texture\Plugins\Photon3Unity3D.xml" />
+     <None Include="Assets\REFERENCE\Global_Texture\Plugins\release_history.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
@@ -106,10 +106,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>

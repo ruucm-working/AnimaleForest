@@ -8,12 +8,16 @@ public class Patrol : MonoBehaviour
 	public Transform[] points;
 	private int destPoint = 0;
 	private NavMeshAgent agent;
+
+	public Animator animator;
 	
 	void Start ()
 	{
 		agent = GetComponent<NavMeshAgent> ();
 
 		Debug.Log ("agent : " + agent);
+
+		animator = this.GetComponent<Animator>();
 		
 		// Disabling auto-braking allows for continuous movement
 		// between points (ie, the agent doesn't slow down as it
@@ -43,7 +47,9 @@ public class Patrol : MonoBehaviour
 		// close to the current one.
 		 
 //		Debug.Log ("agent.remainingDistance  : "+agent.remainingDistance );
-		if (agent.remainingDistance < 0.5f)
+		if (agent.remainingDistance < 0.5f) {
+			animator.SetBool ("isWalking", true);
 			GotoNextPoint ();
+		}
 	}
 }

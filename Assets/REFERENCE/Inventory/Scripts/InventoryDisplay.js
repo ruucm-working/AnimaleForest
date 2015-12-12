@@ -127,7 +127,7 @@ function ChangeBullet (item){
 //	Debug.Log("player.Bullet : "+player.GetComponent("Player_Shoot").Bullet);	
 	if(item.transform.name == "Item_Donuts01_child")
 		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
-	else if(item.transform.name == "Item_Candy")
+	else if(item.transform.name == "Item_Candy2")
 		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Candy");
 	else if(item.transform.name == "Item_Bullet")
 		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Bullet");

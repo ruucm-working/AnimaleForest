@@ -71,17 +71,6 @@
      <Compile Include="Assets\Global_Scripts\scoreManager.cs" />
      <Compile Include="Assets\Global_Scripts\soundManager.cs" />
      <Compile Include="Assets\Global_Scripts\tpMuzzle.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatChannel.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatClient.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatDisconnectCause.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatEventCode.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatOperationCode.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatParameterCode.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatPeer.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatState.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\ChatUserStatus.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\ChatApi\IChatClientListener.cs" />
-     <Compile Include="Assets\Global_Texture\Plugins\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Photon Unity Networking\Demos\DemoWorker\Scripts\WorkerMenu.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\Camera Scripts\MouseLook.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
@@ -104,6 +93,17 @@
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatChannel.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatClient.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatDisconnectCause.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatEventCode.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatOperationCode.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatParameterCode.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatPeer.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatState.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatUserStatus.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\IChatClientListener.cs" />
+     <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Action.cs" />
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Bazooka.cs" />
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\CollectLog.cs" />
@@ -218,8 +218,8 @@
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\MobileReflectiveBumped.shader" />
-     <None Include="Assets\Global_Texture\Plugins\Photon3Unity3D.xml" />
-     <None Include="Assets\Global_Texture\Plugins\release_history.txt" />
+     <None Include="Assets\REFERENCE\Global_Texture\Plugins\Photon3Unity3D.xml" />
+     <None Include="Assets\REFERENCE\Global_Texture\Plugins\release_history.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Transparent.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
@@ -251,10 +251,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
