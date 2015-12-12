@@ -7,6 +7,8 @@ var MaxContent : int = 12; //The maximum number of items the Player can carry.
 var DebugMode = false; //If this is turned on the Inventory script will output the base of what it's doing to the Console window.
 
 private var playersInvDisplay : InventoryDisplay; //Keep track of the InventoryDisplay script.
+private var playersDicDisplay : Dictionary; //Keep track of the InventoryDisplay script.
+
 
 static var itemHolderObject : Transform; //The object the unactive items are going to be parented to. In most cases this is going to be the Inventory object itself.
 
@@ -18,6 +20,10 @@ function Awake ()
 	itemHolderObject = gameObject.transform;
 	
 	playersInvDisplay = GetComponent(InventoryDisplay);
+	
+	playersDicDisplay = GetComponent(Dictionary);
+
+	
 	if (playersInvDisplay == null)
 	{
 		Debug.LogError("No Inventory Display script was found on " + transform.name + " but an Inventory script was.");
@@ -48,19 +54,22 @@ function AddItem(Item:Transform)
 //Add an item to the inventory.
 function AddDictionary(Item:Transform)
 {
+
+	Debug.Log("AddDictionary");
 	var newContents = new Array(DictionaryContents);
 	newContents.Add(Item);
 	DictionaryContents=newContents.ToBuiltin(Transform); //Array to unity builtin array
-	
+		Debug.Log("DictionaryContents : "+DictionaryContents);
+
 	if (DebugMode)
 	{
 		Debug.Log(Item.name+" has been added to inventroy");
 	}
 	
 	//Tell the InventoryDisplay to update the list.
-	if (playersInvDisplay != null)
+	if (playersDicDisplay != null)
 	{
-		playersInvDisplay.UpdateInventoryList();
+		playersDicDisplay.UpdateInventoryList();
 	}
 }
 

@@ -35,6 +35,18 @@ private var invDispKeyIsSame = false;
 @script AddComponentMenu ("Inventory/Character Sheet")
 @script RequireComponent(Inventory)
 
+private var DictionaryUpdatedList : Transform[]; //The updated inventory array.
+var Offset : Vector2 = Vector2 (7, 12); //This will leave so many pixels between the edge of the window (x = horizontal and y = vertical).
+private var cSheetFound = false;
+var itemIconSize : Vector2 = Vector2(60.0, 60.0); //The size of the item icons.
+static var itemBeingDragged : Item; //This refers to the 'Item' script when dragging.
+private var draggedItemPosition : Vector2; //Where on the screen we are dragging our Item.
+
+
+static var displayInventory = false; //If inv is opened.
+
+
+
 //Assign the differnet components to variables and other "behind the scenes" stuff.
 function Awake ()
 {
@@ -59,13 +71,6 @@ function Awake ()
 
 }
 
-function UpdateInventoryList()
-{
-	UpdatedList = associatedInventory.DictionaryContents;
-	//Debug.Log("Inventory Updated");
-}
-
-
 
 //Take care of the array lengths.
 function Start ()
@@ -76,6 +81,153 @@ function Start ()
 		Debug.LogError("The variables on the Character script attached to " + transform.name + " are not set up correctly. There needs to be an equal amount of slots on 'ArmorSlotName' and 'buttonPositions'.");
 	}
 }
+
+
+
+function Update ()
+{
+	//This will turn the character sheet on and off.
+	if (Input.GetKeyDown(onOffButton))
+	{
+		if (csheet)
+		{
+			csheet = false;
+			displayInventory=false;
+			if (invDispKeyIsSame != true)
+			{
+				gameObject.SendMessage ("ChangedState", false, SendMessageOptions.DontRequireReceiver); //Play sound
+				gameObject.SendMessage("PauseGame", false, SendMessageOptions.DontRequireReceiver); //StopPauseGame/EnableMouse/ShowMouse
+			}
+		}
+		else
+		{
+			csheet = true;
+			displayInventory = true;
+			if (invDispKeyIsSame != true)
+			{
+				gameObject.SendMessage ("ChangedState", true, SendMessageOptions.DontRequireReceiver); //Play sound
+				gameObject.SendMessage("PauseGame", true, SendMessageOptions.DontRequireReceiver); //PauseGame/DisableMouse/HideMouse
+			}
+		}
+	}
+	
+	
+		//Updating the list by delay
+	if(Time.time>lastUpdate){
+		lastUpdate=Time.time+updateListDelay;
+		UpdateInventoryList();
+	}
+	
+	
+}
+
+
+
+function UpdateInventoryList()
+{
+	DictionaryUpdatedList = associatedInventory.DictionaryContents;
+	
+	Debug.Log("UpdateInventoryList");
+	Debug.Log("associatedInventory  :"+associatedInventory);
+
+	Debug.Log("DictionaryContents : "+associatedInventory.DictionaryContents);
+
+}
+
+
+
+
+//Setting up the Inventory window
+function DisplayInventoryWindow(windowID:int)
+{
+
+	if (canBeDragged == true)
+	{
+		GUI.DragWindow (Rect (0,0, 10000, 30));  //the window to be able to be dragged
+	}
+	
+	var currentX = 0 + Offset.x; //Where to put the first items.
+	var currentY = 18 + Offset.y; //Im setting the start y position to 18 to give room for the title bar on the window.
+	
+	for(var i:Transform in DictionaryUpdatedList) //Start a loop for whats in our list.
+	{
+		var item=i.GetComponent(Item);
+		if (cSheetFound) //CSheet was found (recommended)
+		{
+			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
+			{
+				var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
+				if(itemBeingDragged == item) //We clicked the item, then clicked it again
+				{
+					if (cSheetFound)
+					{
+						GetComponent(Dictionary).UseItem(item,0,true); //We use the item.
+					}
+//					ClearDraggedItem(); //Stop dragging
+					dragitem = false; //Dont redrag
+				}
+				if (Event.current.button == 0) //Check to see if it was a left click
+				{
+					if(dragitem)
+					{
+						if (item.isEquipment == true) //If it's equipment
+						{
+							itemBeingDragged = item; //Set the item being dragged.
+							draggedItemSize=itemIconSize; //We set the dragged icon size to our item button size.
+							//We set the position:
+							draggedItemPosition.y=Screen.height-Input.mousePosition.y-15;
+							draggedItemPosition.x=Input.mousePosition.x+15;
+						}
+						else
+						{
+							i.GetComponent(ItemEffect).UseEffect(); //It's not equipment so we just use the effect.
+						}
+					}
+				}
+				else if (Event.current.button == 1) //If it was a right click we want to drop the item.
+				{
+					associatedInventory.DropItem(item);
+				}
+			}
+		}
+		else //No CSheet was found (not recommended)
+		{
+			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
+			{
+				if (Event.current.button == 0 && item.isEquipment != true) //Check to see if it was a left click.
+				{
+					i.GetComponent(ItemEffect).UseEffect(); //Use the effect of the item.
+				}
+				else if (Event.current.button == 1) //If it was a right click we want to drop the item.
+				{
+					associatedInventory.DropItem(item);
+				}
+			}
+		}
+		
+		if(item.stackable) //If the item can be stacked:
+		{
+			GUI.Label(Rect(currentX, currentY, itemIconSize.x, itemIconSize.y), "" + item.stack, "Stacks"); //Showing the number (if stacked).
+		}
+		
+		currentX += itemIconSize.x;
+		if(currentX + itemIconSize.x + Offset.x > windowSize.x) //Make new row
+		{
+			currentX=Offset.x; //Move it back to its startpoint wich is 0 + offsetX.
+			currentY+=itemIconSize.y; //Move it down a row.
+			if(currentY + itemIconSize.y + Offset.y > windowSize.y) //If there are no more room for rows we exit the loop.
+			{
+				return;
+			}
+		}
+	}
+}
+
+
+
+
+
+
 
 //Checking if we already have somthing equipped
 function CheckSlot(tocheck:int)
@@ -211,50 +363,21 @@ function RemoveWeapon (Item)
 	}
 }
 
-function Update ()
-{
-	//This will turn the character sheet on and off.
-	if (Input.GetKeyDown(onOffButton))
-	{
-		if (csheet)
-		{
-			csheet = false;
-			if (invDispKeyIsSame != true)
-			{
-				gameObject.SendMessage ("ChangedState", false, SendMessageOptions.DontRequireReceiver); //Play sound
-				gameObject.SendMessage("PauseGame", false, SendMessageOptions.DontRequireReceiver); //StopPauseGame/EnableMouse/ShowMouse
-			}
-		}
-		else
-		{
-			csheet = true;
-			if (invDispKeyIsSame != true)
-			{
-				gameObject.SendMessage ("ChangedState", true, SendMessageOptions.DontRequireReceiver); //Play sound
-				gameObject.SendMessage("PauseGame", true, SendMessageOptions.DontRequireReceiver); //PauseGame/DisableMouse/HideMouse
-			}
-		}
-	}
-	
-	
-		//Updating the list by delay
-	if(Time.time>lastUpdate){
-		lastUpdate=Time.time+updateListDelay;
-		UpdateInventoryList();
-	}
-	
-	
-}
-
 //Draw the Character Window
 function OnGUI()
 {
 	GUI.skin = cSheetSkin; //Use the cSheetSkin variable.
 	
-	if(csheet) //If the csheet is opened up.
+//	if(csheet) //If the csheet is opened up.
+//	{
+//		//Make a window that shows what's in the csheet called "Character" and update the position and size variables from the window variables.
+//		windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "");
+//	}
+	
+		//If the inventory is opened up we create the Inventory window:
+	if(displayInventory)
 	{
-		//Make a window that shows what's in the csheet called "Character" and update the position and size variables from the window variables.
-		windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "");
+		windowRect = GUI.Window (1, windowRect, DisplayInventoryWindow, "");
 	}
 }
 
@@ -273,7 +396,7 @@ function DisplayCSheetWindow(windowID:int)
 		{
 			if(GUI.Button(buttonPositions[index], ArmorSlotName[index])) //If we click this button (that has no item equipped):
 			{
-				var id=GetComponent(InventoryDisplay);
+				var id=GetComponent(Dictionary);
 				if(id.itemBeingDragged != null) //If we are dragging an item:
 				{
 					EquipItem(id.itemBeingDragged,index); //Equip the Item.
@@ -285,7 +408,7 @@ function DisplayCSheetWindow(windowID:int)
 		{
 			if(GUI.Button(buttonPositions[index],ArmorSlot[index].itemIcon)) //If we click this button (that has an item equipped):
 			{
-				var id2=GetComponent(InventoryDisplay);
+				var id2=GetComponent(Dictionary);
 				if(id2.itemBeingDragged != null) //If we are dragging an item:
 				{
 					EquipItem(id2.itemBeingDragged,index); //Equip the Item.

@@ -111,13 +111,13 @@ function OnTriggerEnter (other : Collider) {
 		
 			if(itemType == "ItemBullet")
 				PickUpItem();
-//			else{
+//			else if (itemType == "Animale") {
+//				Debug.Log("itemType == Animale");
+//
+//				Tame ();
 //			
 //			}
-			
-//			if(itemType == "Animale")
-//				Tame();		
-//		
+
 
 			Debug.Log("tag == Player");
 		

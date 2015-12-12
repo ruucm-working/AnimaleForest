@@ -26,18 +26,13 @@ var canBeDragged = true; //Can the Inventory window be dragged?
 
 var onOffButton : KeyCode = KeyCode.I; //The button that turns the Inventory window on and off.
 
-
-
 //Keeping track of components.
 private var associatedInventory : Inventory;
 private var cSheetFound = false;
-private var cSheet : Dictionary;
+private var cSheet : InventoryDisplay;
 
 @script AddComponentMenu ("Inventory/Inventory Display")
 @script RequireComponent(Inventory)
-
-
-var player : GameObject;
 
 //Store components and adjust the window position.
 function Awake()
@@ -51,10 +46,10 @@ function Awake()
 		windowRect = Rect (customPosition.x, customPosition.y, windowSize.x, windowSize.y);
 	}
 	associatedInventory=GetComponent(Inventory);//keepin track of the inventory script
-	if (GetComponent(Dictionary) != null)
+	if (GetComponent(InventoryDisplay) != null)
 	{
 		cSheetFound = true;
-		cSheet = GetComponent(Dictionary);
+		cSheet = GetComponent(InventoryDisplay);
 	}
 	else
 	{
@@ -72,23 +67,23 @@ function UpdateInventoryList()
 
 function Update()
 {
-	if(Input.GetKeyDown(KeyCode.Escape)) //Pressed escape
-	{
-		ClearDraggedItem(); //Get rid of the dragged item.
-//			ChangeBullet();
-	}
-	if(Input.GetMouseButtonDown(1)) //Pressed right mouse
-	{
-		ClearDraggedItem(); //Get rid of the dragged item.
-	
-	}
-	
-	if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
-		ChangeBullet();
-		
-//		ClearDraggedItem(); 
-	
-	}
+		if(Input.GetKeyDown(KeyCode.Escape)) //Pressed escape
+			{
+				ClearDraggedItem(); //Get rid of the dragged item.
+		//			ChangeBullet();
+			}
+			if(Input.GetMouseButtonDown(1)) //Pressed right mouse
+			{
+				ClearDraggedItem(); //Get rid of the dragged item.
+			
+			}
+			
+			if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
+				ChangeBullet();
+				
+		//		ClearDraggedItem(); 
+			
+			}
 	
 	//Turn the Inventory on and off and handle audio + pausing the game.
 	if(Input.GetKeyDown(onOffButton))
@@ -124,8 +119,6 @@ function Update()
 	}
 }
 
-
-
 function ChangeBullet (){
 
 	Debug.Log("ChangeBullet");		
@@ -142,8 +135,6 @@ function ChangeBullet (){
 
 
 }
-
-
 
 //Drawing the Inventory window
 function OnGUI()
@@ -187,7 +178,7 @@ function DisplayInventoryWindow(windowID:int)
 				{
 					if (cSheetFound)
 					{
-						GetComponent(Dictionary).UseItem(item,0,true); //We use the item.
+						GetComponent(InventoryDisplay).UseItem(item,0,true); //We use the item.
 					}
 					ClearDraggedItem(); //Stop dragging
 					dragitem = false; //Dont redrag
