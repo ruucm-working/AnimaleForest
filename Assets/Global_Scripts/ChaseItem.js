@@ -59,16 +59,8 @@
 					Debug.Log("transform.localScale : "+transform.localScale);
 
 				}
-
-
 		}
-		
-		
-		
-		
-		
-		
-		
+	
  }
  
  
@@ -125,9 +117,6 @@ function OnTriggerStay (other : Collider) {
 										  
 				  GetComponent("Patrol").enabled = false; 
   				  GetComponent("NavMeshAgent").enabled = false; 
-
-				
-			
 			}
 			}
 //			else

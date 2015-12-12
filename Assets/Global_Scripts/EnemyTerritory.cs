@@ -10,6 +10,7 @@ public class EnemyTerritory : MonoBehaviour
 	public GameObject enemy;
 	BasicEnemy basicenemy;
 	
+
 	// Use this for initialization
 	void Start ()
 	{
