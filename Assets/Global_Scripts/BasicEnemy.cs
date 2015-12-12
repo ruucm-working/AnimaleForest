@@ -9,13 +9,14 @@ public class BasicEnemy : MonoBehaviour
 	public int attack1Damage = 1;
 	public float timeBetweenAttacks;
 	public static bool moveSwitch ;
-	
+
+	public Animator animator;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		Rest ();
-
+		animator = this.GetComponent<Animator>();
 
 	}
 	
@@ -55,6 +56,8 @@ public class BasicEnemy : MonoBehaviour
 		//move towards player
 		if (Vector3.Distance (transform.position, target.position) > attack1Range && moveSwitch) {
 //			transform.Translate (new Vector3 (speed * Time.deltaTime, 0, 0));
+
+			animator.SetBool("isWalking", true);
 
 			transform.LookAt (target.position);
 			transform.position = Vector3.Lerp (transform.position, target.position, 0.1f * Time.deltaTime);

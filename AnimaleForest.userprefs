@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\ChaseItem.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\BasicEnemy.cs">
     <Files>
+      <File FileName="Assets\Global_Scripts\BasicEnemy.cs" Line="80" Column="2" />
       <File FileName="Assets\Global_Scripts\ChaseItem.js" Line="122" Column="4" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="117" Column="29" />
+      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
       <File FileName="Assets\REFERENCE\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
