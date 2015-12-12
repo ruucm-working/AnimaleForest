@@ -81,7 +81,7 @@ function OnMouseDown()
 //	}
 }
 
-function OnTriggerStay(other: Collider) {
+function OnCollisionEnter(collision: Collision) {
 //	for (var contact: ContactPoint in collision.contacts) {
 //		Debug.DrawRay(contact.point, contact.normal, Color.white);
 //	}
@@ -94,41 +94,12 @@ function OnTriggerStay(other: Collider) {
 //		
 //		
 //		Debug.Log("PickUpItem");
-//		PickUpItem();  
+//		PickUpItem();
 //		
 //		}
 //}
 
-	
-
-
-		if(other.gameObject.tag == "Player"){
-				Debug.Log("Player_OnTriggerStay");
-						PickUpItem();
-		}
-
 }
-
-
-function OnCollisionEnter(collision: Collision) {
-//	for (var contact: ContactPoint in collision.contacts) {
-//		Debug.DrawRay(contact.point, contact.normal, Color.white);
-//	}
-//	if (collision.relativeVelocity.magnitude > 2)
-//		audio.Play();
-
-
-
-if(collision.gameObject.tag == "Player"){
-		
-		
-		Debug.Log("PickUpItem");
-		PickUpItem();
-		
-		}
-}
-
-
 
 //Picking up the Item.
 function PickUpItem ()
@@ -139,10 +110,10 @@ function PickUpItem ()
 	playersinv.gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
 	
 		if(stackable){
-			var locatedit:Inventory_GET;
+			var locatedit:Item;
 			for(var t:Transform in playersinv.Contents){
 				if(t.name==this.transform.name){//if the item we wanna stack this on has the same name
-					var i:Inventory_GET=t.GetComponent(Inventory_GET);
+					var i:Item=t.GetComponent(Item);
 					if(i.stack<i.maxStack){
 						locatedit=i;
 					}

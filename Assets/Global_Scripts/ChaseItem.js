@@ -5,7 +5,7 @@
 // var script : Patrol = GetComponent("Patrol");
  
  
- static var item_script : Inventory_GET;
+ static var item_script : Item;
  
  var MoveSpeed = 4;
  var MaxDist = 10;
