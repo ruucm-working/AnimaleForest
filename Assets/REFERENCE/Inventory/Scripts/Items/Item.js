@@ -94,7 +94,9 @@ function OnCollisionEnter(collision: Collision) {
 //		
 //		
 //		Debug.Log("PickUpItem");
-//		PickUpItem();
+if(collision.gameObject.tag == "Player"){
+		PickUpItem();
+		}
 //		
 //		}
 //}
@@ -103,6 +105,48 @@ function OnCollisionEnter(collision: Collision) {
 
 //Picking up the Item.
 function PickUpItem ()
+{
+	var getit=true;
+	if(canGet){//if its getable or hasnt been gotten.
+	
+	playersinv.gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
+	
+		if(stackable){
+			var locatedit:Item;
+			for(var t:Transform in playersinv.Contents){
+				if(t.name==this.transform.name){//if the item we wanna stack this on has the same name
+					var i:Item=t.GetComponent(Item);
+					if(i.stack<i.maxStack){
+						locatedit=i;
+					}
+				}
+			}
+			if(locatedit!=null){//if we have a stack to stack it to!
+				getit=false;
+				locatedit.stack+=1;
+				Destroy(this.gameObject);
+			}
+			else{
+				getit=true;
+			} 
+		}
+		//If we can get it and the inventory isn't full.
+		if (getit && playersinv.Contents.length < playersinv.MaxContent)
+		{
+			playersinv.AddItem(this.transform);
+			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+		}
+		else if (playersinv.Contents.length >= playersinv.MaxContent)
+		{
+			Debug.Log("Inventory is full");
+		}
+	}
+}
+
+
+
+//Tame the animale.
+function Tame ()
 {
 	var getit=true;
 	if(canGet){//if its getable or hasnt been gotten.

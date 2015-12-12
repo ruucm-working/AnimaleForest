@@ -60,12 +60,10 @@
      <Compile Include="Assets\Global_Scripts\RaycastShooting.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting_bu.cs" />
      <Compile Include="Assets\Global_Scripts\SmoothMouseLook.cs" />
-     <Compile Include="Assets\Global_Scripts\TestAnim.cs" />
      <Compile Include="Assets\Global_Scripts\Test_Raycast.cs" />
      <Compile Include="Assets\Global_Scripts\UnityClipCursor.cs" />
      <Compile Include="Assets\Global_Scripts\dropWeapon.cs" />
      <Compile Include="Assets\Global_Scripts\getWeapon.cs" />
-     <Compile Include="Assets\Global_Scripts\networkController.cs" />
      <Compile Include="Assets\Global_Scripts\networkView.cs" />
      <Compile Include="Assets\Global_Scripts\photonDestroy.cs" />
      <Compile Include="Assets\Global_Scripts\playerName.cs" />

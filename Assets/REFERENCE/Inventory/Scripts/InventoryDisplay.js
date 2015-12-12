@@ -26,6 +26,8 @@ var canBeDragged = true; //Can the Inventory window be dragged?
 
 var onOffButton : KeyCode = KeyCode.I; //The button that turns the Inventory window on and off.
 
+
+
 //Keeping track of components.
 private var associatedInventory : Inventory;
 private var cSheetFound = false;
@@ -33,6 +35,9 @@ private var cSheet : Character;
 
 @script AddComponentMenu ("Inventory/Inventory Display")
 @script RequireComponent(Inventory)
+
+
+var player : GameObject;
 
 //Store components and adjust the window position.
 function Awake()
@@ -70,10 +75,19 @@ function Update()
 	if(Input.GetKeyDown(KeyCode.Escape)) //Pressed escape
 	{
 		ClearDraggedItem(); //Get rid of the dragged item.
+//			ChangeBullet();
 	}
 	if(Input.GetMouseButtonDown(1)) //Pressed right mouse
 	{
 		ClearDraggedItem(); //Get rid of the dragged item.
+	
+	}
+	
+	if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
+		ChangeBullet();
+		
+//		ClearDraggedItem(); 
+	
 	}
 	
 	//Turn the Inventory on and off and handle audio + pausing the game.
@@ -109,6 +123,27 @@ function Update()
 		UpdateInventoryList();
 	}
 }
+
+
+
+function ChangeBullet (){
+
+	Debug.Log("ChangeBullet");		
+	
+	
+	player = GameObject.Find("Dude");
+
+	Debug.Log("player.Bullet : "+player.GetComponent("Player_Shoot").Bullet);	
+	
+	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
+	
+	
+//	this.GetComponent<Player_Shoot>().Bullet = (GameObject)GameObject.Find("FlareMobile"); 
+
+
+}
+
+
 
 //Drawing the Inventory window
 function OnGUI()
