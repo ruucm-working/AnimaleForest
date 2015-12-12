@@ -5,10 +5,10 @@
 var deleteOnUse = true;
 
 private var playersInv : Inventory;
-private var item : Item;
+private var item : Inventory_GET;
 
 @script AddComponentMenu ("Inventory/Items/Item Effect")
-@script RequireComponent(Item)
+@script RequireComponent(Inventory_GET)
 
 //This is where we find the components we need
 function Awake ()
@@ -18,7 +18,7 @@ function Awake ()
 	{
 		Debug.LogWarning("No 'Inventory' found in game. The Item " + transform.name + " has been disabled for pickup (canGet = false).");
 	}
-	item = GetComponent(Item);
+	item = GetComponent(Inventory_GET);
 }
 
 //This is called when the object should be used.

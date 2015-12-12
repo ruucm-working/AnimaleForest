@@ -2,7 +2,7 @@
 
 var WeaponSlot : Transform; //This is where the Weapons are going to go (be parented too). In my case it's the "Melee" gameobject.
 
-private var ArmorSlot : Item[]; //This is the built in Array that stores the Items equipped. You can change this to static if you want to access it from another script.
+private var ArmorSlot : Inventory_GET[]; //This is the built in Array that stores the Items equipped. You can change this to static if you want to access it from another script.
 var ArmorSlotName : String[]; //This determines how many slots the character has (Head, Legs, Weapon and so on) and the text on each slot.
 var buttonPositions : Rect[]; //This list will contain where all buttons, equipped or not will be and SHOULD HAVE THE SAME NUMBER OF cells as the ArmorSlot array.
 
@@ -52,7 +52,7 @@ function Awake ()
 //Take care of the array lengths.
 function Start ()
 {
-	ArmorSlot = new Item [ArmorSlotName.length];
+	ArmorSlot = new Inventory_GET [ArmorSlotName.length];
 	if (buttonPositions.Length != ArmorSlotName.Length)
 	{
 		Debug.LogError("The variables on the Character script attached to " + transform.name + " are not set up correctly. There needs to be an equal amount of slots on 'ArmorSlotName' and 'buttonPositions'.");
@@ -70,7 +70,7 @@ function CheckSlot(tocheck:int)
 }
 
 //Using the item. If we assign a slot, we already know where to equip it.
-function UseItem(i:Item,slot:int,autoequip:boolean)
+function UseItem(i:Inventory_GET,slot:int,autoequip:boolean)
 {
 	if(i.isEquipment){
 		//This is in case we dbl click the item, it will auto equip it. REMEMBER TO MAKE THE ITEM TYPE AND THE SLOT YOU WANT IT TO BE EQUIPPED TO HAVE THE SAME NAME.
@@ -103,7 +103,7 @@ function UseItem(i:Item,slot:int,autoequip:boolean)
 }
 
 //Equip an item to a slot.
-function EquipItem(i:Item,slot:int)
+function EquipItem(i:Inventory_GET,slot:int)
 {
 	if(i.itemType == ArmorSlotName[slot]) //If the item can be equipped there:
 	{
@@ -146,7 +146,7 @@ function EquipItem(i:Item,slot:int)
 }
 
 //Unequip an item.
-function UnequipItem(i:Item)
+function UnequipItem(i:Inventory_GET)
 {
 	gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
 	

@@ -8,17 +8,17 @@ var PickUpDistance = 1.7f; //The distance from where the Item can be picked up. 
 
 //These store information about the Item, if we can pick it up, the Player and the distance to the Player.
 private var canPickUp = false;
-private var theItem : Item;
+private var theItem : Inventory_GET;
 private var thePlayer : Transform;
 private var dist = 9999f;
 
 @script AddComponentMenu ("Inventory/Items/First Person Pick Up")
-@script RequireComponent(Item)
+@script RequireComponent(Inventory_GET)
 
 //This is where we find the usefull information which we can later access.
 function Awake ()
 {
-	theItem = (GetComponent(Item));
+	theItem = (GetComponent(Inventory_GET));
 	
 	if (InstructionBoxSkin == null)
 	{

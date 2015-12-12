@@ -57,12 +57,9 @@ public class getWeapon : MonoBehaviour
 		
 		
 		if (other.gameObject.tag == "Donut") {
-			Destroy (other.gameObject);
-
-//			weaponNum = 2;
-			Debug.Log ("Get other.gameObject  : " + other.gameObject);
-
-			weapon[2] = true;
+//			Destroy (other.gameObject);
+//			Debug.Log ("Get other.gameObject  : " + other.gameObject);
+//			weapon[2] = true;
 			
 		}
 		else if (other.gameObject.tag == "Apple") {

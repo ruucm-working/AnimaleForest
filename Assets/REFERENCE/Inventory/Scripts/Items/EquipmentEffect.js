@@ -3,7 +3,7 @@
 //This script allows you to create equipment effects that will be called either OnEquip or WhileEquipped. This is usefull for magic effects and stat handling.
 
 @script AddComponentMenu ("Inventory/Items/Equipment Effect")
-@script RequireComponent(Item)
+@script RequireComponent(Inventory_GET)
 
 private var effectActive = false;
 

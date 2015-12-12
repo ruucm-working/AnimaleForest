@@ -1,7 +1,7 @@
 //Displaying the Inventory.
 
 //Variables for dragging:
-static var itemBeingDragged : Item; //This refers to the 'Item' script when dragging.
+static var itemBeingDragged : Inventory_GET; //This refers to the 'Item' script when dragging.
 private var draggedItemPosition : Vector2; //Where on the screen we are dragging our Item.
 private var draggedItemSize : Vector2;//The size of the item icon we are dragging.
 
@@ -110,6 +110,51 @@ function Update()
 	}
 }
 
+////Equip an item to a slot.
+//function EquipItem(i:Item,slot:int)
+//{
+//	if(i.itemType == ArmorSlotName[slot]) //If the item can be equipped there:
+//	{
+//		if(CheckSlot(slot)) //If theres an item equipped to that slot we unequip it first:
+//		{
+//			UnequipItem(ArmorSlot[slot]);
+//			ArmorSlot[slot]=null;
+//		}
+//		ArmorSlot[slot]=i; //When we find the slot we set it to the item.
+//		
+//		gameObject.SendMessage ("PlayEquipSound", SendMessageOptions.DontRequireReceiver); //Play sound
+//		
+//		//We tell the Item to handle EquipmentEffects (if any).
+//		if (i.GetComponent(EquipmentEffect) != null)
+//		{
+//			equipmentEffectIs = true;
+//			i.GetComponent(EquipmentEffect).EquipmentEffectToggle(equipmentEffectIs);
+//		}
+//		
+//		//If the item is also a weapon we call the PlaceWeapon function.
+//		if (i.isAlsoWeapon == true)
+//		{
+//			if (i.equippedWeaponVersion != null)
+//			{
+//				PlaceWeapon(i);
+//			}
+//			
+//			else 
+//			{
+//				Debug.LogError("Remember to assign the equip weapon variable!");
+//			}
+//		}
+//		if (DebugMode)
+//		{
+//			Debug.Log(i.name + " has been equipped");
+//		}
+//		
+//		playersinv.RemoveItem(i.transform); //We remove the item from the inventory
+//	}
+//}
+
+
+
 //Drawing the Inventory window
 function OnGUI()
 {
@@ -142,7 +187,7 @@ function DisplayInventoryWindow(windowID:int)
 	
 	for(var i:Transform in UpdatedList) //Start a loop for whats in our list.
 	{
-		var item=i.GetComponent(Item);
+		var item=i.GetComponent(Inventory_GET);
 		if (cSheetFound) //CSheet was found (recommended)
 		{
 			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
