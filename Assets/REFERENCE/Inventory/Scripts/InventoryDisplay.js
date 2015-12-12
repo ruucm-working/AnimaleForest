@@ -78,12 +78,10 @@ function Update()
 			
 			}
 			
-			if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
-				ChangeBullet();
-				
-		//		ClearDraggedItem(); 
-			
-			}
+//			if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
+//				ChangeBullet();
+//	
+//			}
 	
 	//Turn the Inventory on and off and handle audio + pausing the game.
 	if(Input.GetKeyDown(onOffButton))
@@ -119,17 +117,20 @@ function Update()
 	}
 }
 
-function ChangeBullet (){
+function ChangeBullet (item){
 
 	Debug.Log("ChangeBullet");		
-	
+	Debug.Log("item.transform.name : "+item.transform.name);		
 	
 	player = GameObject.Find("Dude");
 
-	Debug.Log("player.Bullet : "+player.GetComponent("Player_Shoot").Bullet);	
-	
-	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
-	
+//	Debug.Log("player.Bullet : "+player.GetComponent("Player_Shoot").Bullet);	
+	if(item.transform.name == "Item_Donuts01_child")
+		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
+	else if(item.transform.name == "Item_Candy")
+		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Candy");
+	else if(item.transform.name == "Item_Bullet")
+		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Bullet");
 	
 //	this.GetComponent<Player_Shoot>().Bullet = (GameObject)GameObject.Find("FlareMobile"); 
 
@@ -173,9 +174,16 @@ function DisplayInventoryWindow(windowID:int)
 		{
 			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
 			{
+			
+				Debug.Log("item : "+item);
+				
+				ChangeBullet(item);
+
 				var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
 				if(itemBeingDragged == item) //We clicked the item, then clicked it again
 				{
+				
+
 					if (cSheetFound)
 					{
 						GetComponent(InventoryDisplay).UseItem(item,0,true); //We use the item.
