@@ -129,7 +129,7 @@ function OnTriggerStay (other : Collider) {
 				  GetComponent("Patrol").enabled = false; 
   				  GetComponent("NavMeshAgent").enabled = false; 
   				  		
-			      GetComponent("Item").PickUpItem();//finding the players inv.
+			      GetComponent("Item").Tame();//finding the players inv.
 
 				isTamed = true;
 							

@@ -31,7 +31,7 @@ var onOffButton : KeyCode = KeyCode.I; //The button that turns the Inventory win
 //Keeping track of components.
 private var associatedInventory : Inventory;
 private var cSheetFound = false;
-private var cSheet : Character;
+private var cSheet : Dictionary;
 
 @script AddComponentMenu ("Inventory/Inventory Display")
 @script RequireComponent(Inventory)
@@ -51,10 +51,10 @@ function Awake()
 		windowRect = Rect (customPosition.x, customPosition.y, windowSize.x, windowSize.y);
 	}
 	associatedInventory=GetComponent(Inventory);//keepin track of the inventory script
-	if (GetComponent(Character) != null)
+	if (GetComponent(Dictionary) != null)
 	{
 		cSheetFound = true;
-		cSheet = GetComponent(Character);
+		cSheet = GetComponent(Dictionary);
 	}
 	else
 	{
@@ -187,7 +187,7 @@ function DisplayInventoryWindow(windowID:int)
 				{
 					if (cSheetFound)
 					{
-						GetComponent(Character).UseItem(item,0,true); //We use the item.
+						GetComponent(Dictionary).UseItem(item,0,true); //We use the item.
 					}
 					ClearDraggedItem(); //Stop dragging
 					dragitem = false; //Dont redrag

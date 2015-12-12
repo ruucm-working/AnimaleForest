@@ -1,4 +1,4 @@
-var itemIcon : Texture2D; //The Icon.
+﻿var itemIcon : Texture2D; //The Icon.
 var canGet = true; //If we can pick up the Item.
 var itemType : String; //This will let us equip the item to specific slots. Ex: Head, Shoulder, or whatever we set up. If the item is equipment (or weapon) this needs to match a slot to work properly.
 var stackable = false; //Is it stackable? If yes then items with the same itemType will be stacked.
@@ -19,7 +19,7 @@ static var playersinv : Inventory;
 
 private var FPPickUpFound = false;
 
-@script AddComponentMenu ("Inventory/Items/Item")
+@script AddComponentMenu ("Inventory/Items/Tame")
 
 //Here we find the components we need.
 function Awake ()
@@ -105,93 +105,47 @@ function OnCollisionEnter(collision: Collision) {
 
 
 function OnTriggerEnter (other : Collider) {
-
-
 		if(other.gameObject.tag == "Player"){
 		
-			if(itemType == "ItemBullet")
-				PickUpItem();
-//			else{
-//			
-//			}
-			
-//			if(itemType == "Animale")
-//				Tame();		
-//		
-
-			Debug.Log("tag == Player");
-		
-		
+		Debug.Log("OnTriggerEnter == Player");
+		Tame();
 		}
-		
-		
 }
 	
 	
 	
-
-//Picking up the Item.
-function PickUpItem ()
-{
-	var getit=true;
-	if(canGet){//if its getable or hasnt been gotten.
-	
-	playersinv.gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
-	
-		if(stackable){
-			var locatedit:Item;
-			for(var t:Transform in playersinv.Contents){
-				if(t.name==this.transform.name){//if the item we wanna stack this on has the same name
-					var i:Item=t.GetComponent(Item);
-					if(i.stack<i.maxStack){
-						locatedit=i;
-					}
-				}
-			}
-			if(locatedit!=null){//if we have a stack to stack it to!
-				getit=false;
-				locatedit.stack+=1;
-				Destroy(this.gameObject);
-			}
-			else{
-				getit=true;
-			} 
-		}
-		//If we can get it and the inventory isn't full.
-		if (getit && playersinv.Contents.length < playersinv.MaxContent)
-		{
-			playersinv.AddItem(this.transform);
-			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
-		}
-		else if (playersinv.Contents.length >= playersinv.MaxContent)
-		{
-			Debug.Log("Inventory is full");
-		}
-	}
-}
 
 
 
 //Tame the animale.
 function Tame ()
 {
-
-Debug.Log("function Tame ()");
-var getit=true;
+	var getit=true;
 	if(canGet){//if its getable or hasnt been gotten.
 	
 	playersinv.gameObject.SendMessage ("PlayPickUpSound", SendMessageOptions.DontRequireReceiver); //Play sound
 	
+	
+				Debug.Log("SendMessage");
+
 		if(stackable){
+		
+		
+						Debug.Log("stackable");
+
+		
 			var locatedit:Item;
 			for(var t:Transform in playersinv.Contents){
 				if(t.name==this.transform.name){//if the item we wanna stack this on has the same name
-					var i:Item=t.GetComponent(Item);
+					var i:Item=t.GetComponent(Item);	
 					if(i.stack<i.maxStack){
 						locatedit=i;
-					}
+					} 
 				}
 			}
+			
+			Debug.Log("locatedit : "+locatedit);
+			
 			if(locatedit!=null){//if we have a stack to stack it to!
 				getit=false;
 				locatedit.stack+=1;
@@ -231,7 +185,7 @@ function MoveMeToThePlayer(itemHolderObject : Transform)
 		GetComponent(Collider).enabled = false;
 	}
 	
-	GetComponent("Item").enabled = false;
+	GetComponent("Tame").enabled = false;
 	
 	transform.parent = itemHolderObject;
 	transform.localPosition = Vector3.zero;
@@ -255,7 +209,7 @@ function DropMeFromThePlayer(makeDuplicate : boolean)
 			GetComponent(Collider).enabled = true;
 		}
 	
-		GetComponent("Item").enabled = true;
+		GetComponent("Tame").enabled = true;
 		
 		transform.parent = null;
 		DelayPhysics();
@@ -277,7 +231,7 @@ function DropMeFromThePlayer(makeDuplicate : boolean)
 			clone.GetComponent(Collider).enabled = true;
 		}
 	
-		clone.GetComponent("Item").enabled = true;
+		clone.GetComponent("Tame").enabled = true;
 		
 		clone.transform.parent = null;
 		clone.name = gameObject.name;

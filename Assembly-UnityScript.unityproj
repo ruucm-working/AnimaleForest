@@ -46,17 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GetAnythings.js" />
      <Compile Include="Assets\Global_Scripts\Animation_Walking.js" />
      <Compile Include="Assets\Global_Scripts\ChaseItem.js" />
      <Compile Include="Assets\Global_Scripts\ChooseEquip.js" />
      <Compile Include="Assets\REFERENCE\FakeSniperView\FakeSniperView.js" />
-     <Compile Include="Assets\REFERENCE\Inventory\Scripts\Character.js" />
+     <Compile Include="Assets\REFERENCE\Inventory\Scripts\Dictionary.js" />
+     <Compile Include="Assets\REFERENCE\Inventory\Scripts\Dictionary2.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Inventory.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Items\EquipmentEffect.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Items\FirstPersonPickUp.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Items\ItemEffect.js" />
+     <Compile Include="Assets\REFERENCE\Inventory\Scripts\Items\Tame.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\ChangeScene.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\InvAudio.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\InvPauseGame.js" />

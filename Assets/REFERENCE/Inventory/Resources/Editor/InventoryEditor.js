@@ -198,16 +198,16 @@ class InventoryEditor extends EditorWindow {
 		
 		if (includeCSheet)
 		{
-			invObject.AddComponent(Character);
+			invObject.AddComponent(Dictionary);
 			
-			if (selectedObject.GetComponent(Character) != null)
+			if (selectedObject.GetComponent(Dictionary) != null)
 			{
 				Debug.LogWarning("The Character Sheet (Character) script was found on the selected object (" + selected + "). Make sure to delete all traces of any previously installed Inventory. There should only be an 'Inventory', 'InventoryDisplay' and 'Character' script on an Inventory gameobject parented to the Player. The Inventory was still set up though.");
 			}
 		}
 		
 		//Set up the cSheet variables
-		var csheet = invObject.GetComponent(Character);
+		var csheet = invObject.GetComponent(Dictionary);
 		
 		if (cSheetGUI != null)
 		{
@@ -324,9 +324,9 @@ class InventoryEditor extends EditorWindow {
 			DestroyImmediate(selectedObject.FindChild("Inventory").gameObject);
 		}
 		
-		if (selectedObject.GetComponent(Character) != null)
+		if (selectedObject.GetComponent(Dictionary) != null)
 		{
-			DestroyImmediate(selectedObject.gameObject.GetComponent(Character));
+			DestroyImmediate(selectedObject.gameObject.GetComponent(Dictionary));
 		}
 		
 		if (selectedObject.GetComponent(Inventory) != null)
