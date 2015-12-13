@@ -9,6 +9,7 @@ var Secondary : GameObject;
 // Use this for initialization
 function Start () {
 
+// Debug.Log
 	Debug.Log ("Start", gameObject);
 	Secondary.active = false;
 
@@ -28,6 +29,7 @@ function Update () {
 
 	if(Input.GetKeyDown("1") && Secondary.active == true){
 	
+	// Debug.Log();
 		Debug.Log ("1", gameObject);
 //		Primary.SetActiveRecursively(true);
 //		Secondary.SetActiveRecursively(false);

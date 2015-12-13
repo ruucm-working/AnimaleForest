@@ -34,7 +34,7 @@ public class NPC_Patrol : MonoBehaviour {
 		if(WayPoints.Length > 0)
 		{			
 			Transform target = WayPoints[m_WayPointIndex];
-			Debug.Log("target : "+target);
+			// Debug.Log("target : "+target);
 			if (target)
 			{			
 				if(Vector3.Distance(target.position,m_Animator.rootPosition) > 1.5f)

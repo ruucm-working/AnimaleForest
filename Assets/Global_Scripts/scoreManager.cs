@@ -8,7 +8,7 @@ public class scoreManager : Photon.MonoBehaviour {
 	public int teamBscore;
 
 	public Text teamA;
-	public Text teamB;
+	public Text teamB; 
 
 	void Update(){
 		teamA.text = "Team A: " + teamAscore;
