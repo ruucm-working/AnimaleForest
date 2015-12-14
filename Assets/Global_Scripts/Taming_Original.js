@@ -39,7 +39,7 @@ var tameCount = 0;
 
 
 		//Define Action of Animale when Tame Success!
-		if(trailPlayerSw){
+		if(isTamed){
 
 
 			//Trail Player
@@ -120,8 +120,8 @@ if (other.tag == "Temtation") {
 	tameCount += 1;
 	Debug.Log("tameCount : "+tameCount);
 //		                	 }
-} 
-}
+		} 
+	}
 
 
 
@@ -131,7 +131,7 @@ if (other.tag == "Temtation") {
 
 				Debug.Log("Tame Success!");
 				m_Animator.SetBool("isJumping", true); // tell animator to shoot
-				trailPlayerSw = true;
+				// trailPlayerSw = true;
 
 				GetComponent("Patrol").enabled = false; 
 				GetComponent("NavMeshAgent").enabled = false; 
@@ -141,8 +141,8 @@ if (other.tag == "Temtation") {
 			      isTamed = true;
 
 
-			  }
-			}
+		  	}
+		}
 //			else
 
 
