@@ -55,6 +55,7 @@
      <Compile Include="Assets\Global_Scripts\EnemyTerritory.cs" />
      <Compile Include="Assets\Global_Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\Global_Scripts\LockAndHideCursor.cs" />
+     <Compile Include="Assets\Global_Scripts\MyotoMove.cs" />
      <Compile Include="Assets\Global_Scripts\POLICEscript.cs" />
      <Compile Include="Assets\Global_Scripts\Patrol.cs" />
      <Compile Include="Assets\Global_Scripts\RaycastShooting.cs" />
@@ -124,6 +125,19 @@
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Reset.cs" />
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Spawner.cs" />
      <Compile Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\REFERENCE\Myo Samples\Scripts\ColorBoxByPose.cs" />
+     <Compile Include="Assets\REFERENCE\Myo Samples\Scripts\JointOrientation.cs" />
+     <Compile Include="Assets\REFERENCE\Myo Samples\Scripts\SampleSceneGUI.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\EventTypes.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Hub.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Myo.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Pose.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Quaternion.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\Vector3.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\Myo.NET\libmyo.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\ThalmicHub.cs" />
+     <Compile Include="Assets\REFERENCE\Myo\Scripts\ThalmicMyo.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\REFERENCE\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -232,6 +246,7 @@
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Diffuse.shader" />
+     <None Include="Assets\REFERENCE\Myo\README-MyoUnity.txt" />
      <None Include="Assets\REFERENCE\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\REFERENCE\Photon Unity Networking\readme.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
@@ -249,6 +264,9 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="InputSimulator">
+ <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/Global_Scripts/InputSimulator.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>C:/Users/user1/Documents/GitHub/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>

@@ -68,21 +68,21 @@ function UpdateInventoryList()
 function Update()
 {
 		if(Input.GetKeyDown(KeyCode.Escape)) //Pressed escape
-			{
+		{
 				ClearDraggedItem(); //Get rid of the dragged item.
 		//			ChangeBullet();
-			}
+	}
 			if(Input.GetMouseButtonDown(1)) //Pressed right mouse
 			{
 				ClearDraggedItem(); //Get rid of the dragged item.
-			
+
 			}
 			
 //			if(Input.GetMouseButtonDown(0)){ //Pressed left mouse{
 //				ChangeBullet();
 //	
 //			}
-	
+
 	//Turn the Inventory on and off and handle audio + pausing the game.
 	if(Input.GetKeyDown(onOffButton))
 	{
@@ -125,13 +125,22 @@ function ChangeBullet (item){
 	player = GameObject.Find("Dude");
 
 //	Debug.Log("player.Bullet : "+player.GetComponent("Player_Shoot").Bullet);	
-	if(item.transform.name == "Item_Donuts01_child")
-		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
-	else if(item.transform.name == "Item_Candy2")
-		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Candy");
-	else if(item.transform.name == "Item_Bullet")
-		player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Bullet");
-	
+if(item.transform.name == "Item_Donuts01_child")
+	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Donuts");
+else if(item.transform.name == "Item_Candy2")
+	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Candy");
+else if(item.transform.name == "Item_Bullet")
+	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Bullet");
+else if(item.transform.name == "Item_myoWeapon"){
+	player.GetComponent("Player").hasLog = false;
+	player.transform.FindChild("Joint").gameObject.SetActive(true);		
+		// Debug.Log("player.GetComponent("Player_Shoot").CanShoot() :" + player.GetComponent("Player_Shoot").CanShoot() );
+	}
+	else if(item.transform.name == "Log"){
+		player.GetComponent("Player").hasLog = true;		
+		player.transform.FindChild("Joint").gameObject.SetActive(false);		
+
+	}
 //	this.GetComponent<Player_Shoot>().Bullet = (GameObject)GameObject.Find("FlareMobile"); 
 
 
@@ -174,15 +183,16 @@ function DisplayInventoryWindow(windowID:int)
 		{
 			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
 			{
-			
+
 				Debug.Log("item : "+item);
 				
 				ChangeBullet(item);
 
-				var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
+				var dragitem=false;
+				// var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
 				if(itemBeingDragged == item) //We clicked the item, then clicked it again
 				{
-				
+
 
 					if (cSheetFound)
 					{

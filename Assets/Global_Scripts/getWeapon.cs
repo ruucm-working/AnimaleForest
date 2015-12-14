@@ -34,6 +34,7 @@ public class getWeapon : MonoBehaviour
 		
 	}
 	
+
 	void OnTriggerEnter (Collider other)
 	{
 		

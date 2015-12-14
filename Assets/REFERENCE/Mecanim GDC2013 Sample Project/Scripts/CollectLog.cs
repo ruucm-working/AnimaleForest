@@ -11,8 +11,8 @@ public class CollectLog : MonoBehaviour {
 	{
 		if(collider.gameObject.tag == "Player")
 		{
-			Destroy(gameObject);			
-			collider.gameObject.GetComponent<Player>().hasLog = true;
+			// Destroy(gameObject);			
+			// collider.gameObject.GetComponent<Player>().hasLog = true;
 		}
 	}
 }
