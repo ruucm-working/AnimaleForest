@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\DamageProvider.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CamFollow.cs">
     <Files>
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\InventoryDisplay.js" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Inventory\Scripts\Other\InvPauseGame.js" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\scoreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\DamageProvider.cs" Line="42" Column="87" />
+      <File FileName="Assets\CamFollow.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
