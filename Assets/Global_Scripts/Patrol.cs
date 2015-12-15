@@ -29,6 +29,10 @@ public class Patrol : MonoBehaviour
 	
 	void GotoNextPoint ()
 	{
+
+
+		transform.forward = Vector3.Lerp (transform.forward, points [destPoint].forward, 0.1f * Time.deltaTime);
+
 		// Returns if no points have been set up
 		if (points.Length == 0)
 			return;
