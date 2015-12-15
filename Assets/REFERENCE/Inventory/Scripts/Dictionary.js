@@ -12,6 +12,10 @@ private var ArmorSlot : Item[]; //This is the built in Array that stores the Ite
 var ArmorSlotName : String[]; //This determines how many slots the character has (Head, Legs, Weapon and so on) and the text on each slot.
 var buttonPositions : Rect[]; //This list will contain where all buttons, equipped or not will be and SHOULD HAVE THE SAME NUMBER OF cells as the ArmorSlot array.
 
+
+var DicDetails : Sprite[];
+
+
 var windowSize : Vector2 = Vector2(375,300); //The size of the character window.
 var useCustomPosition = false; //Do we want to use the customPosition variable to define where on the screen the Character window will appear.
 var customPosition : Vector2 = Vector2 (70, 70); //The custom position of the Character window.
@@ -25,6 +29,8 @@ var DebugMode = false; //If this is enabled, debug.logs will print out informati
 static var csheet = false; //Helps with turning the CharacterSheet on and off.
 
 private var windowRect = Rect(100,100,200,300); //Keeping track of our character window.
+// private var windowRect2 = Rect(100,100,200,300); //Keeping track of our character window.
+
 
 //These are keeping track of components such as equipmentEffects and Audio.
 private var playersinv; //Refers to the Inventory script.
@@ -55,10 +61,13 @@ function Awake ()
 	if (useCustomPosition == false)
 	{
 		windowRect = Rect(Screen.width-windowSize.x-70,Screen.height-windowSize.y-(162.5+70*2),windowSize.x,windowSize.y);
+		// windowRect2 = Rect(Screen.width-windowSize.x,Screen.height-windowSize.y-(162.5+70*2),windowSize.x,windowSize.y);
+
 	}
 	else
 	{
 		windowRect = Rect(customPosition.x,customPosition.y,windowSize.x,windowSize.y);
+		// windowRect2 = Rect(customPosition.x,customPosition.y,windowSize.x,windowSize.y);
 	}
 	invAudio = GetComponent(InvAudio);
 	if (GetComponent(InventoryDisplay).onOffButton == onOffButton)
@@ -149,13 +158,40 @@ function DisplayInventoryWindow(windowID:int)
 	var currentX = 0 + Offset.x; //Where to put the first items.
 	var currentY = 18 + Offset.y; //Im setting the start y position to 18 to give room for the title bar on the window.
 	
+	var currentX2 = 70 + Offset.x; //Where to put the first items.
+	var currentY2 = 88 + Offset.y; //Im setting the start y position to 18 to give room for the title bar on the window.
+	
+
+
+
+
+
+
+
 	for(var i:Transform in DictionaryUpdatedList) //Start a loop for whats in our list.
 	{
 		var item=i.GetComponent(Item);
 		if (cSheetFound) //CSheet was found (recommended)
 		{
+
+
+
+				//Draw on Clicked
+
+			// if(GUI.Button(Rect(currentX2,currentY2,itemIconSize.x,itemIconSize.y),item.itemIcon))
+			// {
+
+			// }
+
+
 			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
 			{
+				Debug.Log("item : "+item+ "clicked in Dictionary");
+
+
+				 GUI.DrawTexture(new Rect(0, 0, 64, 64), DicDetails[0]);
+
+
 				var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
 				if(itemBeingDragged == item) //We clicked the item, then clicked it again
 				{
@@ -378,6 +414,8 @@ function OnGUI()
 	if(displayInventory)
 	{
 		windowRect = GUI.Window (1, windowRect, DisplayInventoryWindow, "");
+		// windowRect2 = GUI.Window (2, windowRect2, DisplayInventoryWindow, "");
+
 	}
 }
 
