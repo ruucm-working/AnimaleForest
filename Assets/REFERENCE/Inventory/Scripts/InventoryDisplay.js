@@ -131,7 +131,7 @@ else if(item.transform.name == "Item_Candy2")
 	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Candy");
 else if(item.transform.name == "Item_Bullet")
 	player.GetComponent("Player_Shoot").Bullet = GameObject.Find("Par_Bullet");
-else if(item.transform.name == "Item_myoWeapon"){
+else if(item.transform.name == "Item_Comb"){
 	player.GetComponent("Player").hasLog = false;
 	player.transform.FindChild("Joint").gameObject.SetActive(true);		
 		// Debug.Log("player.GetComponent("Player_Shoot").CanShoot() :" + player.GetComponent("Player_Shoot").CanShoot() );
