@@ -67,7 +67,6 @@
      <Compile Include="Assets\Global_Scripts\getWeapon.cs" />
      <Compile Include="Assets\Global_Scripts\networkView.cs" />
      <Compile Include="Assets\Global_Scripts\photonDestroy.cs" />
-     <Compile Include="Assets\Global_Scripts\playerName.cs" />
      <Compile Include="Assets\Global_Scripts\roomManager.cs" />
      <Compile Include="Assets\Global_Scripts\scoreManager.cs" />
      <Compile Include="Assets\Global_Scripts\soundManager.cs" />

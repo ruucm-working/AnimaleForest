@@ -187,9 +187,9 @@ function DisplayInventoryWindow(windowID:int)
 			if(GUI.Button(Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
 			{
 				Debug.Log("item : "+item+ "clicked in Dictionary");
+ 
 
-
-				 GUI.DrawTexture(new Rect(0, 0, 64, 64), DicDetails[0]);
+				 // GUI.DrawTexture(new Rect(0, 0, 64, 64), DicDetails[0]);
 
 
 				var dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
