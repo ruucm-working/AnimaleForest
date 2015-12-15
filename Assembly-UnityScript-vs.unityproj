@@ -66,6 +66,8 @@
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\InvAudio.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\InvPauseGame.js" />
      <Compile Include="Assets\REFERENCE\Inventory\Scripts\Other\WeaponSwitch.js" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\MobileReflectiveBumped.shader" />
@@ -89,6 +91,7 @@
      <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />

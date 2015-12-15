@@ -94,6 +94,14 @@
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\Pause.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\PlayMusic.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\QuitApplication.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
+     <Compile Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
      <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatChannel.cs" />
      <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatClient.cs" />
      <Compile Include="Assets\REFERENCE\Global_Texture\Plugins\ChatApi\ChatDisconnectCause.cs" />
@@ -213,7 +221,7 @@
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\DragRigidbody.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\DynamicShadowSettings.cs" />
-     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\REFERENCE\Standard Assets\Utility\EventSystemChecker2.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FOVKick.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FPSCounter.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\FollowTarget.cs" />
@@ -229,6 +237,8 @@
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\REFERENCE\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
      <None Include="Assets\REFERENCE\Inventory\Credits + C#.txt" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\MobileReflectiveBumped.shader" />
@@ -252,6 +262,7 @@
      <None Include="Assets\REFERENCE\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\REFERENCE\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\REFERENCE\Game Jam Menu Template\Assets\Game Jam Menu Template\GameJamTemplateReadMe.txt" />
      <None Include="Assets\REFERENCE\EZFPS\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
      <None Include="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Environment\Shaders\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />

@@ -45,7 +45,7 @@ var tameCount = 0;
 			//Trail Player
 			transform.LookAt(Player);
 			
-			yield WaitForSeconds(1);
+			//yield WaitForSeconds(1);
 			
 			
 			transform.forward = Vector3.Lerp (transform.forward, Player.forward, 0.1f * Time.deltaTime);
