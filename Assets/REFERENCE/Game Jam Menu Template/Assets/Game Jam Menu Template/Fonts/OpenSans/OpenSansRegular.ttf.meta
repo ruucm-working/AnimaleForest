@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a3b4b96d8752cc346b34a23c1d64f4a6
+=======
+guid: 9d62e48479dd4994e848e6a042ae28da
+>>>>>>> refs/remotes/origin/feature_151214
 TrueTypeFontImporter:
   serializedVersion: 2
   fontSize: 16
@@ -9,7 +13,10 @@ TrueTypeFontImporter:
   includeFontData: 1
   use2xBehaviour: 0
   fontNames: []
+<<<<<<< HEAD
   fallbackFontReferences: []
+=======
+>>>>>>> refs/remotes/origin/feature_151214
   customCharacters: 
   fontRenderingMode: 0
   userData: 

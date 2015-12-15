@@ -16,7 +16,11 @@ public class EventSystemChecker : MonoBehaviour
 
 			//And adds the required components
 			obj.AddComponent<EventSystem>();
+<<<<<<< HEAD
 			//obj.AddComponent<StandaloneInputModule>().forceModuleActive = true;
+=======
+			obj.AddComponent<StandaloneInputModule>().allowActivationOnMobileDevice = true;
+>>>>>>> refs/remotes/origin/feature_151214
 			obj.AddComponent<TouchInputModule>();
 		}
 	}

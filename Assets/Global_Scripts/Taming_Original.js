@@ -44,6 +44,12 @@ var tameCount = 0;
 
 			//Trail Player
 			transform.LookAt(Player);
+			
+			//yield WaitForSeconds(1);
+			
+			
+			transform.forward = Vector3.Lerp (transform.forward, Player.forward, 0.1f * Time.deltaTime);
+
 
 			if(Vector3.Distance(transform.position,Player.position) >= pMinDist){
 
@@ -51,10 +57,13 @@ var tameCount = 0;
 
 
 
+
 				if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
 				{
+				
+				transform.position += transform.forward*pMoveSpeed*Time.deltaTime;
 		                 //Here Call any function U want Like Shoot at here or something
-		             } 
+	             } 
 
 		         }
 

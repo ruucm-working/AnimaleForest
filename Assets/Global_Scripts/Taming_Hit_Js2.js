@@ -53,7 +53,7 @@ function Update ()
 
 
 			//Trail Player
-			transform.LookAt(Player);
+			//transform.LookAt(Player);
 
 			if(Vector3.Distance(transform.position,Player.position) >= pMinDist){
 

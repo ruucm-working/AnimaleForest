@@ -8,6 +8,8 @@ public class dropWeapon : MonoBehaviour {
 	
 	public AnimationClip drop_d;
 
+	public static bool drop_switch = true;
+
 	void OnCollisionEnter(Collision collision) {
 		//		foreach (ContactPoint contact in collision.contacts) {
 		//			Debug.DrawRay(contact.point, contact.normal, Color.white);
@@ -21,7 +23,10 @@ public class dropWeapon : MonoBehaviour {
 			Debug.Log("Drop It!");
 
 			Debug.Log("animManager : "+animManager);
-			animManager.Play (drop_d.name);
+			if(drop_switch){
+				animManager.Play (drop_d.name);
+				drop_switch = false;
+			}
 //			animManager2.Play (drop_d.name);
 
 		}
