@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b23d646de15c897459fcd644bc63d8fd
 timeCreated: 1450141630
+=======
+guid: ecc6cf560c304f34a98d3114cd97c9be
+timeCreated: 1450108792
+>>>>>>> refs/remotes/origin/feature_IntroGUI
 licenseType: Free
 NativeFormatImporter:
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 73be89e2f411cdb4caea1fc3edb6c74a
+=======
+guid: 558ab9f3f2ee37247aaa499d7da03467
+>>>>>>> refs/remotes/origin/feature_IntroGUI
 folderAsset: yes
 timeCreated: 1435331280
 licenseType: Store
