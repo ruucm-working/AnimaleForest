@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 385f0620bc8dffc4f9e27fb82434163e
+guid: 7b69dce71b212483fb2590681ce3765d
 folderAsset: yes
-timeCreated: 1450141263
-=======
-guid: 6d79e2959ee3b074eb409e86a57e424b
-folderAsset: yes
-timeCreated: 1450101132
->>>>>>> refs/remotes/origin/feature_IntroGUI
+timeCreated: 1450158996
 licenseType: Free
 DefaultImporter:
   userData: 

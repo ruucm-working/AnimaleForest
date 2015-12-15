@@ -1,17 +1,6 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Global_Scripts\Patrol.cs">
-    <Files>
-      <File FileName="Assets\Global_Scripts\Taming_Original.js" Line="48" Column="6" />
-      <File FileName="Assets\CamFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\Player_Shoot.cs" Line="1" Column="1" />
-      <File FileName="Assets\REFERENCE\Mecanim GDC2013 Sample Project\Scripts\DamageProvider.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\Taming_Hit_Js2.js" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\scoreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Global_Scripts\Patrol.cs" Line="34" Column="88" />
-      <File FileName="Assets\REFERENCE\Standard Assets\Utility\EventSystemChecker2.cs" Line="23" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: ac0960904fa66164da4205a3e0eb50b7
-timeCreated: 1450141623
-=======
-guid: e908a7a8608fc4d418fb512daedb42bb
-timeCreated: 1450108772
->>>>>>> refs/remotes/origin/feature_IntroGUI
+guid: a87abccf6fc51407581ed7c0a2bc9916
+timeCreated: 1450159126
 licenseType: Free
 TextScriptImporter:
   userData: 

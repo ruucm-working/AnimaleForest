@@ -61,10 +61,10 @@ function Update ()
 
 
 
-				if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
-				{
+//				if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
+//				{
 		                 //Here Call any function U want Like Shoot at here or something
-		             } 
+//		             } 
 
 		         }
 

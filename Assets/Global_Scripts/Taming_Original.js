@@ -43,7 +43,7 @@ var tameCount = 0;
 
 
 			//Trail Player
-			transform.LookAt(Player);
+			//transform.LookAt(Player);
 			
 			//yield WaitForSeconds(1);
 			
@@ -58,12 +58,12 @@ var tameCount = 0;
 
 
 
-				if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
-				{
+				//if(Vector3.Distance(transform.position,Item.position) <= pMaxDist)
+				//{
 				
-				transform.position += transform.forward*pMoveSpeed*Time.deltaTime;
+				//transform.position += transform.forward*pMoveSpeed*Time.deltaTime;
 		                 //Here Call any function U want Like Shoot at here or something
-	             } 
+	            // } 
 
 		         }
 
@@ -109,6 +109,9 @@ function OnTriggerStay (other : Collider) {
 //			Debug.Log("OnTriggerStay, other :"+other);
 
 if (other.tag == "Temtation") {
+
+
+	m_Animator = GetComponent.<Animator>();
 
 	Debug.Log("Temtation Entered!");
 

@@ -59,7 +59,7 @@ public class BasicEnemy : MonoBehaviour
 
 			animator.SetBool("isWalking", true);
 
-			transform.LookAt (target.position);
+			//transform.LookAt (target.position);
 			transform.position = Vector3.Lerp (transform.position, target.position, 0.1f * Time.deltaTime);
 
 //			moveSwitch = true;
