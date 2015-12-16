@@ -112,16 +112,16 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="InputSimulator">
- <HintPath>C:/Users/I'm Jamie/Desktop/AnimaleForest 3/AnimaleForest/Assets/Global_Scripts/InputSimulator.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/AnimaleForest/Assets/Global_Scripts/InputSimulator.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/I'm Jamie/Desktop/AnimaleForest 3/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/I'm Jamie/Desktop/AnimaleForest 3/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/AnimaleForest/Assets/REFERENCE/Global_Texture/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/I'm Jamie/Desktop/AnimaleForest 3/AnimaleForest/Assets/REFERENCE/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/A Carver/Unity/AnimaleForest/Assets/REFERENCE/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
